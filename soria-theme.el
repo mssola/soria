@@ -208,6 +208,67 @@
 
     `(success
       ((,class (:foreground ,soria-blue))))
+
+    ;; Helm
+    ;; TODO: just like the status bar
+
+    `(helm-buffer-file
+      ((,class (:foreground ,soria-white))))
+
+    `(helm-buffer-file
+      ((,class (:foreground ,soria-blue))))
+
+    `(helm-buffer-process
+      ((,class (:foreground ,soria-statusgray))))
+
+    `(helm-buffer-saved-out
+      ((,class (:foreground ,soria-white
+                :background ,soria-darkgray))))
+
+    `(helm-buffer-size
+      ((,class (:background ,soria-statusgray))))
+
+    `(helm-candidate-number
+      ((,class (:background ,soria-statusgray
+                :foreground ,soria-white))))
+
+    `(helm-ff-directory
+      ((,class (:foreground ,soria-blue))))
+
+    `(helm-ff-executable
+      ((,class (:foreground ,soria-white))))
+
+    `(helm-ff-file
+      ((,class (:foreground ,soria-white))))
+
+    `(helm-ff-invalid-symlink
+      ((,class (:foreground ,soria-white))))
+
+    `(helm-ff-prefix
+      ((,class (:foreground ,soria-white))))
+
+    `(helm-match
+      ((,class (:foreground ,soria-white :inherit bold))))
+
+    `(helm-match-item
+      ((,class (:inherit helm-match))))
+
+    `(helm-selection
+      ((,class (:background ,soria-linegray,
+                :underline nil))))
+
+    `(helm-selection-line
+      ((,class (:background ,soria-linegray
+                :foreground ,soria-white
+                :underline nil))))
+
+    `(helm-separator
+      ((,class (:foreground ,soria-gray))))
+
+    `(helm-source-header
+      ((,class (:background ,soria-linegray
+                :foreground ,soria-white
+                :underline nil))))
   )
 )
 
