@@ -15,6 +15,11 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+;; Author: Miquel Sabaté Solà <mikisabate@gmail.com>
+;; Version: 0.1
+;; Keywords: color theme
+;; URL: https://github.com/mssola/soria
+
 ;;; Commentary:
 ;;
 ;; This is a color theme based on xoria256 (vim.org #2140) but with some
@@ -27,7 +32,7 @@
 ;; This theme is *largely* based on this port.
 ;;
 ;; Kelvin Smith for the port of the Monokai theme to Emacs
-;; (https://github.com/oneKelvinSmith/monokai-emacs). I've taken a lot of
+;; (https://github.com/oneKelvinSmith/monokai-emacs). I've taken a *lot* of
 ;; inspiration from its source code.
 ;;
 ;; I've adapted some of the color IDs with this gist:
@@ -35,12 +40,22 @@
 
 ;;; Code:
 
-;; Initialization stuff.
+;; Defining the theme and its configuration group.
 
 (unless (>= emacs-major-version 24)
   (error "The soria theme requires Emacs 24 or later!"))
 
 (deftheme soria "A xoria256 theme with some colors from openSUSE")
+
+(defgroup soria nil
+  "Soria theme options.
+The theme has to be reloaded after changing anything in this group."
+  :group 'faces)
+
+(defcustom soria-hide-helm-header t
+  "Hide the Helm header."
+  :type 'boolean
+  :group 'soria)
 
 ;; First of all, let's create our own font-lock for numbers.
 
@@ -88,12 +103,55 @@
 
   (custom-theme-set-faces
     'soria
-    ;; Ensure sufficient contrast on low-color terminals.
+    ;; General coloring.
     `(default (
       (((class color) (min-colors 256))
-       (:foreground ,soria-white :background ,soria-darkgray))))
+       (:foreground ,soria-white
+        :background ,soria-darkgray))))
 
-    ;; Highlighting faces
+    `(mouse
+      ((,class (:foreground ,soria-darkgray
+                :background ,soria-white
+                :inverse-video t))))
+
+    `(cursor
+      ((,class (:foreground ,soria-darkgray
+                :background ,soria-white
+                :inverse-video t))))
+
+    `(shadow
+      ((,class (:foreground ,soria-gray))))
+
+    `(link
+      ((,class (:foreground ,soria-blue
+                            :underline t
+                            :weight normal))))
+
+    `(match
+      ((,class (:background ,soria-orange
+                :foreground ,soria-darkgray
+                :weight bold))))
+
+    `(link-visited
+      ((,class (:inherit link))))
+
+    `(minibuffer-prompt
+      ((,class (:foreground ,soria-white))))
+
+    `(escape-glyph
+      ((,class (:foreground ,soria-redpastel))))
+
+    `(escape-glyph-face
+      ((,class (:foreground ,soria-redpastel))))
+
+    `(error
+      ((,class (:foreground ,soria-white))))
+
+    `(warning
+      ((,class (:foreground ,soria-orange))))
+
+    `(success
+      ((,class (:foreground ,soria-blue))))
 
     `(highlight
       ((,class (:background ,soria-darkpurple
@@ -111,6 +169,20 @@
 
     `(trailing-whitespace
       ((,class (:background ,soria-brightgreen))))
+
+    `(hl-line
+      ((,class (:background ,soria-linegray))))
+
+    `(linum-highlight-face
+      ((,class (:background ,soria-darkgray
+                :foreground ,soria-yellow))))
+
+    `(show-paren-match
+      ((,class (:background ,soria-brightgreen
+                :foreground ,soria-darkgreen))))
+
+    `(vertical-border
+      ((,class (:foreground ,soria-statusgray))))
 
     ;; Font lock faces
 
@@ -156,18 +228,14 @@
     `(font-lock-warning-face
       ((,class (:foreground ,soria-green))))
 
-    ;; Misc
+    ;; Search
 
-    `(hl-line
-      ((,class (:background ,soria-linegray))))
+    `(isearch
+      ((,class (:inherit default))))
 
-    `(linum-highlight-face
-      ((,class (:background ,soria-darkgray
-                :foreground ,soria-yellow))))
-
-    `(show-paren-match
-      ((,class (:background ,soria-brightgreen
-                :foreground ,soria-darkgreen))))
+    `(isearch-fail
+      ((,class (:foreground ,soria-redpastel
+                :background ,soria-darkgray))))
 
     ;; Mode line faces
 
@@ -192,25 +260,27 @@
     `(compilation-mode-line-exit
       ((,class (:foreground ,soria-brightgreen))))
 
-    ;; Escape and prompt faces
+    ;; Custom
 
-    `(minibuffer-prompt
-      ((,class (:foreground ,soria-white))))
+    `(custom-face-tag
+      ((,class (:foreground ,soria-purple))))
 
-    `(escape-glyph
-      ((,class (:foreground ,soria-redpastel))))
+    `(custom-variable-tag
+      ((,class (:inherit custom-face-tag))))
 
-    `(error
-      ((,class (:foreground ,soria-white))))
+    `(custom-comment-tag
+      ((,class (:foreground ,soria-yellow))))
 
-    `(warning
-      ((,class (:foreground ,soria-orange))))
-
-    `(success
+    `(custom-group-tag
       ((,class (:foreground ,soria-blue))))
 
+    `(custom-group-tag-1
+      ((,class (:foreground ,soria-purple))))
+
+    `(custom-state
+      ((,class (:foreground ,soria-yellow))))
+
     ;; Helm
-    ;; TODO: just like the status bar
 
     `(helm-buffer-file
       ((,class (:foreground ,soria-white))))
@@ -265,10 +335,16 @@
     `(helm-separator
       ((,class (:foreground ,soria-gray))))
 
-    `(helm-source-header
-      ((,class (:background ,soria-linegray
-                :foreground ,soria-white
-                :underline nil))))
+    ; The Helm header might be hidden if the user decides so (true by default).
+    (if soria-hide-helm-header
+      `(helm-source-header
+        ((,class (:background ,soria-darkgray
+                  :foreground ,soria-darkgray
+                  :underline nil))))
+      `(helm-source-header
+        ((,class (:background ,soria-linegray
+                  :foreground ,soria-white
+                  :underline nil)))))
   )
 )
 
