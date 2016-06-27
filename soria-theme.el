@@ -345,6 +345,13 @@ The theme has to be reloaded after changing anything in this group."
         ((,class (:background ,soria-linegray
                   :foreground ,soria-white
                   :underline nil)))))
+
+    ; ansi color names
+    (custom-theme-set-variables
+    'soria
+    `(ansi-color-names-vector [,soria-darkgray ,soria-redpastel ,soria-green
+                               ,soria-yellow ,soria-blue ,soria-darkpurple
+                               ,soria-purple ,soria-white]))
   )
 )
 
