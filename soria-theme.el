@@ -352,6 +352,32 @@ The theme has to be reloaded after changing anything in this group."
     `(ansi-color-names-vector [,soria-darkgray ,soria-redpastel ,soria-green
                                ,soria-yellow ,soria-blue ,soria-darkpurple
                                ,soria-purple ,soria-white]))
+
+    ;; Flycheck
+
+    `(flycheck-error
+      ((,(append '((supports :underline (:style wave))) class)
+       (:underline (:style wave :color ,soria-redpastel) :inherit unspecified))))
+
+    `(flycheck-warning
+      ((,(append '((supports :underline (:style wave))) class)
+       (:underline (:style wave :color ,soria-orange) :inherit unspecified))))
+
+    `(flycheck-info
+      ((,(append '((supports :underline (:style wave))) class)
+       (:underline (:style wave :color ,soria-blue) :inherit unspecified))))
+
+    `(flycheck-fringe-error
+      ((,(append '((supports :underline (:style wave))) class)
+       (:underline (:style wave :color ,soria-redpastel) :inherit unspecified))))
+
+    `(flycheck-fringe-warning
+      ((,(append '((supports :underline (:style wave))) class)
+       (:underline (:style wave :color ,soria-orange) :inherit unspecified))))
+
+    `(flycheck-fringe-info
+      ((,(append '((supports :underline (:style wave))) class)
+       (:underline (:style wave :color ,soria-blue) :inherit unspecified))))
   )
 )
 
