@@ -378,7 +378,7 @@ The theme has to be reloaded after changing anything in this group."
     `(flycheck-fringe-info
       ((,(append '((supports :underline (:style wave))) class)
        (:underline (:style wave :color ,soria-blue) :inherit unspecified))))
-                                                     ;;
+
     ;; Flyspell
 
     `(flyspell-duplicate
@@ -388,6 +388,47 @@ The theme has to be reloaded after changing anything in this group."
     `(flyspell-incorrect
       ((,(append '((supports :underline (:style wave))) class)
         (:underline (:style wave :color ,soria-redpastel) :inherit unspecified))))
+
+    ;; eldoc
+
+    `(eldoc-highlight-function-argument
+      ((,class (:foreground ,soria-darkgreen
+                :underline nil))))
+
+    ;; eshell
+
+    `(eshell-prompt
+      ((,class (:inherit default))))
+
+    `(eshell-ls-archive
+      ((,class (:inherit default))))
+
+    `(eshell-ls-backup
+      ((,class (:inherit default))))
+
+    `(eshell-ls-clutter
+      ((,class (:inherit default))))
+
+    `(eshell-ls-unreadable
+      ((,class (:inherit default))))
+
+    `(eshell-ls-product
+      ((,class (:inherit default))))
+
+    `(eshell-ls-special
+      ((,class (:inherit default))))
+
+    `(eshell-ls-directory
+      ((,class (:foreground ,soria-blue))))
+
+    `(eshell-ls-executable
+      ((,class (:foreground ,soria-yellow))))
+
+    `(eshell-ls-missing
+      ((,class (:foreground ,soria-redpastel))))
+
+    `(eshell-ls-symlink
+      ((,class (:foreground ,soria-darkpurple))))
   )
 )
 
