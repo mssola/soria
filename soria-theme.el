@@ -378,6 +378,16 @@ The theme has to be reloaded after changing anything in this group."
     `(flycheck-fringe-info
       ((,(append '((supports :underline (:style wave))) class)
        (:underline (:style wave :color ,soria-blue) :inherit unspecified))))
+                                                     ;;
+    ;; Flyspell
+
+    `(flyspell-duplicate
+      ((,(append '((supports :underline (:style wave))) class)
+        (:underline (:style wave :color ,soria-orange) :inherit unspecified))))
+
+    `(flyspell-incorrect
+      ((,(append '((supports :underline (:style wave))) class)
+        (:underline (:style wave :color ,soria-redpastel) :inherit unspecified))))
   )
 )
 
