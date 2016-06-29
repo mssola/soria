@@ -63,9 +63,10 @@ The theme has to be reloaded after changing anything in this group."
 (set-face-attribute 'font-lock-number-face nil :inherit font-lock-constant-face)
 (setq font-lock-number-face 'font-lock-number-face)
 
-; add-font-lock-numbers adds to the list of keywords of font-lock-number-face
-; the supported numeric formats (decimal, octal, hex and bin).
 (defun add-font-lock-numbers ()
+  "Add to the list of keywords numeric formats.
+It adds to font-lock-number-face decimal, octal, hex and bin formats."
+
   (defvar font-lock-number    "[0-9]+\\([eE][+-]?[0-9]*\\)?")
   (defvar font-lock-hexnumber "0[xX][0-9a-fA-F]+")
   (defvar font-lock-binnumber "0[bB][01]+")
@@ -199,7 +200,7 @@ The theme has to be reloaded after changing anything in this group."
       ((,class (:inherit font-lock-comment-face))))
 
     `(font-lock-function-name-face
-      ((,class (:foreground ,soria-purple))))
+      ((,class (:foreground ,soria-white))))
 
     `(font-lock-variable-name-face
       ((,class (:foreground ,soria-white))))
@@ -392,7 +393,7 @@ The theme has to be reloaded after changing anything in this group."
     ;; eldoc
 
     `(eldoc-highlight-function-argument
-      ((,class (:foreground ,soria-darkgreen
+      ((,class (:foreground ,soria-green
                 :underline nil))))
 
     ;; eshell
@@ -435,6 +436,17 @@ The theme has to be reloaded after changing anything in this group."
 ;; And finally hook the defined font locks and call provide-theme.
 
 (add-hook 'prog-mode-hook 'add-font-lock-numbers)
+
+(defun soria-purple-identifiers ()
+  "Make function identifiers purple.
+This function might be used as a hook for modes that prefer having purple
+function identifiers instead of the default white.  This might seem hachish, but
+it tries to workaround discrepencies between Vim and Emacs in terms of
+identifiers"
+
+  (let ((soria-purple "#dfafdf"))
+    (set (make-local-variable 'face-remapping-alist)
+         `((font-lock-function-name-face :foreground ,soria-purple)))))
 
 (provide-theme 'soria)
 

@@ -13,6 +13,28 @@ In the `soria-theme.el` file I list further acknowledgements.
 To install it, just drop the `soria-theme.el` file into your `~/.emacs.d` and
 load it with `load-theme`.
 
+## Configuration
+
+This color theme defines the `soria` group, which in turn has only one
+configuration option:
+
+- `soria-hide-helm-header`: the Helm package in combination with Projectile
+  shows a header that in my humble opinion is quite useless and it's
+  distracting. For this reason, this header is hidden by default. If you set
+  it to false, then you'll see the header with the same colors as the status
+  line.
+
+Moreover, this theme also provides one function that can be used as a hook:
+`soria-purple-identifiers`. As a reminder, this color theme is a port from Vim,
+and Vim and Emacs have some different takes on function identifiers. As such,
+the original Vim theme defines identifiers as purple, but only method
+definitions in Ruby, Perl and PHP (languages that I've used with these theme,
+there might be more) were highlighted this way, but that wasn't the case for C,
+C++ or Go. This is certainly a bug in Vim, but I got used to it, and when doing
+this port I could notice this a lot. For this reason, by default this color
+theme for Emacs defines function identifiers as white, but it provides this
+function so in other languages can be drawn in purple.
+
 ## License
 
 Copyright (C) 2016 Miquel Sabaté Solà <mikisabate@gmail.com>
