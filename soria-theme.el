@@ -430,6 +430,41 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
 
     `(eshell-ls-symlink
       ((,class (:foreground ,soria-darkpurple))))
+
+    ;; rainbow-delimiters
+
+    `(rainbow-delimiters-depth-1-face
+      ((,class (:foreground ,soria-brightgreen))))
+
+    `(rainbow-delimiters-depth-2-face
+      ((,class (:foreground ,soria-redpastel))))
+
+    `(rainbow-delimiters-depth-3-face
+      ((,class (:foreground ,soria-orange))))
+
+    `(rainbow-delimiters-depth-4-face
+      ((,class (:foreground ,soria-blue))))
+
+    `(rainbow-delimiters-depth-5-face
+      ((,class (:foreground ,soria-white))))
+
+    `(rainbow-delimiters-depth-6-face
+      ((,class (:foreground ,soria-white))))
+
+    `(rainbow-delimiters-depth-7-face
+      ((,class (:foreground ,soria-white))))
+
+    `(rainbow-delimiters-depth-8-face
+      ((,class (:foreground ,soria-white))))
+
+    `(rainbow-delimiters-depth-9-face
+      ((,class (:foreground ,soria-white))))
+
+    `(rainbow-delimiters-unmatched-face
+      ((,class (:foreground ,soria-purple :bold t))))
+
+    `(rainbow-delimiters-missmatched-face
+      ((,class (:foreground ,soria-purple :bold t))))
   )
 )
 
