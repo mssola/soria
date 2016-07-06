@@ -318,11 +318,26 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
     `(helm-ff-prefix
       ((,class (:foreground ,soria-white))))
 
+    `(helm-grep-finish
+      ((,class (:foreground ,soria-green))))
+
+    `(helm-grep-lineno
+      ((,class (:foreground ,soria-orange))))
+
+    `(helm-grep-match
+      ((,class (:foreground ,soria-white :inherit bold))))
+
+    `(helm-grep-running
+      ((,class (:foreground ,soria-redpastel))))
+
     `(helm-match
       ((,class (:foreground ,soria-white :inherit bold))))
 
     `(helm-match-item
       ((,class (:inherit helm-match))))
+
+    `(helm-moccur-buffer
+      ((,class (:foreground ,soria-blue :underline nil))))
 
     `(helm-selection
       ((,class (:background ,soria-linegray,
