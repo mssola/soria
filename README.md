@@ -13,6 +13,12 @@ In the `soria-theme.el` file I list further acknowledgements.
 To install it, just drop the `soria-theme.el` file into your `~/.emacs.d` and
 load it with `load-theme`.
 
+## Screenshots
+
+I've saved some screenshots in the `screenshots` directory. They do not show a
+full sample of all the defined colors, but it will give you a good idea of the
+look and feel of this theme.
+
 ## Configuration
 
 This color theme defines the `soria` group, which in turn has only one
