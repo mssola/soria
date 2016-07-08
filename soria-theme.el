@@ -490,8 +490,8 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
 (defun soria-purple-identifiers ()
   "Make function identifiers purple.
 This function might be used as a hook for modes that prefer having purple
-function identifiers instead of the default white.  This might seem hachish, but
-it tries to workaround discrepencies between Vim and Emacs in terms of
+function identifiers instead of the default white.  This might seem hackish,
+but it tries to workaround discrepencies between Vim and Emacs in terms of
 identifiers"
 
   (let ((soria-purple "#dfafdf"))
