@@ -480,6 +480,44 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
 
     `(rainbow-delimiters-missmatched-face
       ((,class (:foreground ,soria-purple :bold t))))
+
+    ;; diff
+    `(diff-added
+      ((,class (:background ,soria-darkgreen :foreground ,soria-whitest))))
+
+    `(diff-changed
+      ((,class (:background ,soria-darkpurple :foreground ,soria-whitest))))
+
+    `(diff-removed
+      ((,class (:background ,soria-redpastel :foreground ,soria-whitest))))
+
+    `(diff-header
+      ((,class (:background ,soria-darkgray :foreground ,soria-white))))
+
+    `(diff-file-header
+      ((,class (:background ,soria-darkgray :foreground ,soria-white))))
+
+    `(diff-refine-added
+      ((,class (:background ,soria-darkgreen :foreground ,soria-darkgray))))
+
+    `(diff-refine-change
+      ((,class (:background ,soria-darkpurple :foreground ,soria-darkgray))))
+
+    `(diff-refine-removed
+      ((,class (:background ,soria-redpastel :foreground ,soria-darkgray))))
+
+    ;; diff-hl
+    `(diff-hl-change
+      ((,class (:background ,soria-darkpurple :foreground ,soria-whitest))))
+
+    `(diff-hl-delete
+      ((,class (:background ,soria-redpastel :foreground ,soria-whitest))))
+
+    `(diff-hl-insert
+      ((,class (:background ,soria-darkgreen :foreground ,soria-whitest))))
+
+    `(diff-hl-unknown
+      ((,class (:background ,soria-darkpurple :foreground ,soria-whitest))))
   )
 )
 
