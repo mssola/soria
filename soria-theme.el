@@ -528,8 +528,148 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
 
     `(sh-escaped-newline
       ((,class (:foreground ,soria-redpastel :weight normal))))
-  )
-)
+
+    ;; message-mode
+    `(message-cited-text
+      ((,class (:foreground ,soria-gray :weight normal))))
+
+    `(message-header-name
+      ((,class (:foreground ,soria-gray :weight normal))))
+
+    `(message-header-other
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(message-header-to
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(message-header-cc
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(message-header-newsgroups
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(message-header-subject
+      ((,class (:foreground ,soria-blue :weight normal))))
+
+    `(message-header-xheader
+      ((,class (:foreground ,soria-blue :weight normal))))
+
+    `(message-mml
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(message-separator
+      ((,class (:foreground ,soria-gray :slant italic))))
+
+    ;; mu4e
+    ;; TODO
+    ;;   - Color of headers' headers list
+    ;;   - Polish main and headers
+    ;;   - Go for view mode
+    ;;
+
+    `(mu4e-cited-1-face
+      ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+    `(mu4e-cited-2-face
+      ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+    `(mu4e-cited-3-face
+      ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+    `(mu4e-cited-4-face
+      ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+    `(mu4e-cited-5-face
+      ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+    `(mu4e-cited-6-face
+      ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+    `(mu4e-cited-7-face
+      ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+    `(mu4e-flagged-face
+      ((,class (:foreground ,soria-darkpurple :weight normal))))
+
+    `(mu4e-view-url-number-face
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(mu4e-warning-face
+      ((,class (:foreground ,soria-redpastel :slant normal :weight normal))))
+
+    `(mu4e-highlight-face
+      ((,class (:inherit unspecified
+                         :foreground ,soria-blue
+                         :weight normal))))
+
+    `(mu4e-header-highlight-face
+      ((,class (:inherit unspecified
+                         :foreground ,soria-white
+                         :background ,soria-statusgray
+                         :weight normal))))
+
+    `(mu4e-draft-face
+      ((,class (:inherit font-lock-string-face))))
+
+    `(mu4e-footer-face
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(mu4e-forwarded-face
+      ((,class (:inherit font-lock-builtin-face :weight normal))))
+
+    `(mu4e-header-face
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(mu4e-header-marks-face
+      ((,class (:inherit font-lock-preprocessor-face))))
+
+    `(mu4e-header-title-face
+      ((,class (:inherit font-lock-type-face))))
+
+    `(mu4e-highlight-face
+      ((,class (:inherit font-lock-pseudo-keyword-face :weight normal))))
+
+    `(mu4e-moved-face
+      ((,class (:inherit font-lock-comment-face :slant italic))))
+
+    `(mu4e-ok-face
+      ((,class (:inherit font-lock-comment-face :slant normal :weight normal))))
+
+    `(mu4e-replied-face
+      ((,class (:inherit font-lock-builtin-face :weight normal))))
+
+    `(mu4e-system-face
+      ((,class (:inherit font-lock-comment-face :slant italic))))
+
+    `(mu4e-title-face
+      ((,class (:inherit custom-face-tag :weight normal))))
+
+    `(mu4e-trashed-face
+      ((,class (:inherit font-lock-comment-face :strike-through t))))
+
+    `(mu4e-unread-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(mu4e-header-key-face
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(mu4e-view-attach-number-face
+      ((,class (:inherit font-lock-variable-name-face :weight normal))))
+
+    `(mu4e-view-contact-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(mu4e-view-header-key-face
+      ((,class (:inherit message-header-name :weight normal))))
+
+    `(mu4e-view-header-value-face
+      ((,class (:foreground ,soria-blue :weight normal :slant normal))))
+
+    `(mu4e-view-link-face
+      ((,class (:inherit link))))
+
+    `(mu4e-view-special-header-value-face
+      ((,class (:foreground ,soria-blue :weight normal :underline nil))))))
 
 ;; And finally hook the defined font locks and call provide-theme.
 
