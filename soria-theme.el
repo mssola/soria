@@ -518,6 +518,16 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
 
     `(diff-hl-unknown
       ((,class (:background ,soria-darkpurple :foreground ,soria-whitest))))
+
+    ;; sh-mode
+    `(sh-heredoc
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(sh-quoted-exec
+      ((,class (:foreground ,soria-redpastel :weight normal))))
+
+    `(sh-escaped-newline
+      ((,class (:foreground ,soria-redpastel :weight normal))))
   )
 )
 
