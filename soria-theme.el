@@ -306,6 +306,15 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
     `(helm-ff-directory
       ((,class (:foreground ,soria-blue))))
 
+    `(helm-ff-dotted-directory
+      ((,class (:inherit helm-ff-directory))))
+
+    `(helm-ff-symlink
+      ((,class (:foreground ,soria-brightgreen))))
+
+    `(helm-ff-dotted-symlink-directory
+      ((,class (:inherit helm-ff-symlink))))
+
     `(helm-ff-executable
       ((,class (:foreground ,soria-white))))
 
@@ -559,6 +568,20 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
 
     `(message-separator
       ((,class (:foreground ,soria-gray :slant italic))))
+
+    ;; Evil mode
+
+    `(evil-ex-info
+      ((,class (:foreground ,soria-redpastel :inherit normal))))
+
+    `(evil-ex-substitute-matches
+      ((,class (:foreground ,soria-redpastel :inherit normal))))
+
+    `(evil-ex-substitute-replacement
+      ((,class (:foreground ,soria-brightgreen :inherit normal))))
+
+    `(evil-search-highlight-persist-highlight-face
+      ((,class (:inherit region))))
 
     ;; mu4e
     ;; TODO
