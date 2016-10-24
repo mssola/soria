@@ -490,15 +490,283 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
     `(rainbow-delimiters-missmatched-face
       ((,class (:foreground ,soria-purple :bold t))))
 
+    ;; Magit
+
+    `(magit-diff-file-heading
+      ((,class (:foreground ,soria-white
+                :weight normal))))
+
+    `(magit-diff-file-heading-highlight
+      ((,class (:inherit magit-diff-file-heading))))
+
+    `(magit-diff-file-heading-selection
+      ((,class (:foreground ,soria-white
+                :weight normal))))
+
+    `(magit-diff-hunk-heading
+      ((,class (:foreground ,soria-white
+                :weight normal))))
+
+    `(magit-diff-hunk-heading-highlight
+      ((,class (:inherit magit-diff-hunk-heading))))
+
+    `(magit-diff-hunk-heading-selection
+      ((,class (:foreground ,soria-white
+                :weight normal))))
+
+    `(magit-diff-lines-heading
+      ((,class (:foreground ,soria-white
+                :weight normal))))
+
+    `(magit-diff-lines-boundary
+      ((,class (:foreground ,soria-white
+                :weight normal))))
+
+    `(magit-diff-conflict-heading
+      ((,class (:foreground ,soria-redpastel
+                :weight normal))))
+
+    `(magit-diff-added
+      ((,class (:foreground ,soria-green
+                :background ,soria-darkgray))))
+
+    `(magit-diff-added-highlight
+      ((,class (:inherit magit-diff-added))))
+
+    `(magit-diff-removed
+      ((,class (:foreground ,soria-redpastel
+                :background ,soria-darkgray))))
+
+    `(magit-diff-removed-highlight
+      ((,class (:inherit magit-diff-removed))))
+
+    `(magit-diff-our
+      ((,class (:foreground ,soria-blue
+                :weight normal))))
+
+    `(magit-diff-base
+      ((,class (:foreground ,soria-white
+                :weight normal))))
+
+    `(magit-diff-their
+      ((,class (:foreground ,soria-orange
+                :weight normal))))
+
+    `(magit-diff-context
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(magit-diff-our-highlight
+      ((,class (:inherit magit-diff-context))))
+
+    `(magit-diff-our-highlight
+      ((,class (:inherit magit-diff-context))))
+
+    `(magit-diff-their-highlight
+      ((,class (:inherit magit-diff-context))))
+
+    `(magit-diff-context-highlight
+      ((,class (:inherit magit-diff-context))))
+
+    `(magit-diffstat-added
+      ((,class (:foreground ,soria-green))))
+
+    `(magit-diffstat-removed
+      ((,class (:foreground ,soria-redpastel))))
+
+    `(magit-process-ok
+      ((,class (:inherit default))))
+
+    `(magit-process-ng
+      ((,class (:foreground ,soria-redpastel
+                :weight normal))))
+
+    `(magit-rebase-hash
+      ((,class (:foreground ,soria-yellow
+                :weight normal))))
+
+    `(magit-log-graph
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(magit-log-author
+      ((,class (:foreground ,soria-blue))))
+
+    `(magit-log-date
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(magit-log-head-label-bisect-bad
+      ((,class (:foreground ,soria-redpastel
+                :background ,soria-darkgray
+                :box 1))))
+
+    `(magit-log-head-label-bisect-good
+      ((,class (:foreground ,soria-green
+                :background ,soria-darkgray
+                :box 1))))
+
+    `(magit-log-head-label-default
+      ((,class (:foreground ,soria-gray
+                :box 1))))
+
+    `(magit-log-head-label-local
+      ((,class (:foreground ,soria-darkpurple
+                :background ,soria-darkgray
+                :box 1))))
+
+    `(magit-log-head-label-patches
+      ((,class (:foreground ,soria-green
+                :background ,soria-darkgray
+                :box 1))))
+
+    `(magit-log-head-label-remote
+      ((,class (:foreground ,soria-orange
+                :background ,soria-darkgray
+                :box 1))))
+
+    `(magit-log-head-label-tags
+      ((,class (:foreground ,soria-yellow
+                :background ,soria-darkgray
+                :box 1))))
+
+    `(magit-log-sha1
+      ((,class (:foreground ,soria-yellow))))
+
+    `(magit-bisect-good
+      ((,class (:inherit default))))
+
+    `(magit-bisect-skip
+      ((,class (:inherit default))))
+
+    `(magit-bisect-bad
+      ((,class (:foreground ,soria-redpastel
+                :weight normal))))
+
+    `(magit-sequence-pick
+      ((,class (:inherit default))))
+
+    `(magit-sequence-stop
+      ((,class (:foreground ,soria-green
+                :weight normal))))
+
+    `(magit-sequence-part
+      ((,class (:foreground ,soria-orange
+                :weight normal))))
+
+    `(magit-sequence-head
+      ((,class (:foreground ,soria-blue
+                :weight normal))))
+
+    `(magit-sequence-drop
+      ((,class (:foreground ,soria-redpastel
+                :weight normal))))
+
+    `(magit-sequence-done
+      ((,class (:inherit magit-hash))))
+
+    `(magit-sequence-onto
+      ((,class (:inherit magit-sequence-done))))
+
+    `(magit-section-title
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(magit-section-heading
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(magit-section-highlight
+      ((,class (:background ,soria-darkgray))))
+
+    `(magit-section-secondary-heading
+      ((,class (:background ,soria-darkgray))))
+
+    `(magit-section-heading-selection
+      ((,class (:foreground ,soria-orange :weight normal))))
+
+    `(magit-header-line
+      ((,class (:inherit magit-section-heading))))
+
+    `(magit-dimmed
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(magit-hash
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(magit-tag
+      ((,class (:background ,soria-darkgray
+                :foreground ,soria-green))))
+
+    `(magit-branch-remote
+      ((,class (:foreground ,soria-orange :weight normal))))
+
+    `(magit-branch-local
+      ((,class (:foreground ,soria-purple :weight normal))))
+
+    `(magit-branch-current
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(magit-branch
+      ((,class (:foreground ,soria-orange :weight normal))))
+
+    `(magit-item-highlight
+      ((,class (:inherit default))))
+
+    `(magit-head
+      ((,class (:inherit branch-local))))
+
+    `(magit-refname
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(magit-refname-stash
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(magit-refname-wip
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(magit-signature-good
+      ((,class (:foreground ,soria-green
+                :weight normal))))
+
+    `(magit-signature-bad
+      ((,class (:foreground ,soria-redpastel
+                :weight normal))))
+
+    `(magit-signature-unstrusted
+      ((,class (:foreground ,soria-orange
+                :weight normal))))
+
+    `(magit-cherry-unmatched
+      ((,class (:foreground ,soria-blue
+                :weight normal))))
+
+    `(magit-cherry-equivalent
+      ((,class (:foreground ,soria-purple
+                :weight normal))))
+
+    `(magit-filename
+      ((,class (:foreground ,soria-white))))
+
+    `(magit-blame-heading
+      ((,class (:inherit font-lock-comment-face))))
+
+    `(magit-blame-summary
+      ((,class (:inherit magit-blame-heading))))
+
+    `(magit-blame-hash
+      ((,class (:inherit magit-blame-heading))))
+
+    `(magit-blame-name
+      ((,class (:inherit magit-blame-heading))))
+
+    `(magit-blame-date
+      ((,class (:inherit magit-blame-heading))))
+
     ;; diff
     `(diff-added
-      ((,class (:background ,soria-darkgreen :foreground ,soria-whitest))))
+      ((,class (:foreground ,soria-green :background ,soria-darkgray))))
 
     `(diff-changed
-      ((,class (:background ,soria-darkpurple :foreground ,soria-whitest))))
+      ((,class (:background ,soria-darkgray :foreground ,soria-darkpurple))))
 
     `(diff-removed
-      ((,class (:background ,soria-redpastel :foreground ,soria-whitest))))
+      ((,class (:background ,soria-darkgray :foreground ,soria-redpastel))))
 
     `(diff-header
       ((,class (:background ,soria-darkgray :foreground ,soria-white))))
@@ -578,7 +846,7 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:foreground ,soria-redpastel :inherit normal))))
 
     `(evil-ex-substitute-replacement
-      ((,class (:foreground ,soria-brightgreen :inherit normal))))
+      ((,class (:foreground ,soria-green :inherit normal))))
 
     `(evil-search-highlight-persist-highlight-face
       ((,class (:inherit region))))
