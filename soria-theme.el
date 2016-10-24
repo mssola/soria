@@ -700,7 +700,7 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:foreground ,soria-purple :weight normal))))
 
     `(magit-branch-current
-      ((,class (:foreground ,soria-yellow :weight normal))))
+      ((,class (:foreground ,soria-purple :weight normal))))
 
     `(magit-branch
       ((,class (:foreground ,soria-orange :weight normal))))
