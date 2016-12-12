@@ -852,11 +852,6 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:inherit region))))
 
     ;; mu4e
-    ;; TODO
-    ;;   - Color of headers' headers list
-    ;;   - Polish main and headers
-    ;;   - Go for view mode
-    ;;
 
     `(mu4e-cited-1-face
       ((,class (:foreground ,soria-gray :slant italic :weight normal))))
@@ -943,6 +938,15 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
 
     `(mu4e-header-key-face
       ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(mu4e-context-face
+      ((,class (:inherit mu4e-title-face :weight normal))))
+
+    `(mu4e-modeline-face
+      ((,class (:inherit font-lock-string-face :weight normal))))
+
+    `(mu4e-region-code
+      ((,class (:background  ,soria-darkgray))))
 
     `(mu4e-view-attach-number-face
       ((,class (:inherit font-lock-variable-name-face :weight normal))))
