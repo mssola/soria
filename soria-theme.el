@@ -281,6 +281,31 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
     `(custom-state
       ((,class (:foreground ,soria-yellow))))
 
+    ;; outline
+    `(outline-1
+      ((,class (:inherit org-level-1))))
+
+    `(outline-2
+      ((,class (:inherit org-level-2))))
+
+    `(outline-3
+      ((,class (:inherit org-level-3))))
+
+    `(outline-4
+      ((,class (:inherit org-level-4))))
+
+    `(outline-5
+      ((,class (:inherit org-level-5))))
+
+    `(outline-6
+        ((,class (:inherit org-level-6))))
+
+    `(outline-7
+      ((,class (:inherit org-level-7))))
+
+    `(outline-8
+      ((,class (:inherit org-level-8))))
+
     ;; Helm
 
     `(helm-buffer-file
@@ -964,7 +989,238 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:inherit link))))
 
     `(mu4e-view-special-header-value-face
-      ((,class (:foreground ,soria-blue :weight normal :underline nil))))))
+      ((,class (:foreground ,soria-blue :weight normal :underline nil))))
+
+    ;; ERC
+
+    `(erc-current-nick-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(erc-dangerous-host-face
+      ((,class (:foreground ,soria-redpastel :weight normal))))
+
+    `(erc-pal-face
+      ((,class (:foreground ,soria-purple :weight normal))))
+
+    `(erc-fool-face
+      ((,class (:foreground ,soria-gray :weight normal))))
+
+    `(erc-keyword-face
+      ((,class (:foreground ,soria-green :weight normal))))
+
+    `(erc-direct-msg-face
+      ((,class (:foreground ,soria-redpastel :weight normal))))
+
+    `(erc-header-line-face
+      ((,class (:foreground ,soria-linegray :background ,soria-darkgray :weight normal))))
+
+    `(erc-input-face
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(erc-prompt-face
+      ((,class (:foreground ,soria-white :background ,soria-darkgray :weight normal))))
+
+    `(erc-notice-face
+      ((,class (:foreground ,soria-gray :weight normal))))
+
+    `(erc-error-face
+      ((,class (:foreground ,soria-redpastel :weight normal))))
+
+    `(erc-my-nick-face
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(erc-nick-default-face
+      ((,class (:weight normal))))
+
+    `(erc-nick-msg-face
+      ((,class (:foreground ,soria-redpastel :weight normal))))
+
+    `(erc-inverse-face
+      ((,class (:foreground ,soria-black :background ,soria-white :weight normal))))
+
+    `(fg:erc-color-face0
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(fg:erc-color-face1
+      ((,class (:foreground ,soria-green :weight normal))))
+
+    `(fg:erc-color-face2
+      ((,class (:foreground ,soria-blue :weight normal))))
+
+    `(fg:erc-color-face3
+      ((,class (:foreground ,soria-purple :weight normal))))
+
+    `(fg:erc-color-face4
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(fg:erc-color-face5
+      ((,class (:foreground ,soria-redpastel :weight normal))))
+
+    `(fg:erc-color-face6
+      ((,class (:foreground ,soria-orange :weight normal))))
+
+    `(fg:erc-color-face7
+      ((,class (:foreground ,soria-darkgreen :weight normal))))
+
+    `(fg:erc-color-face8
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(fg:erc-color-face9
+      ((,class (:foreground ,soria-darkpurple :weight normal))))
+
+    `(fg:erc-color-face10
+      ((,class (:foreground ,soria-brightgreen :weight normal))))
+
+    `(fg:erc-color-face11
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(fg:erc-color-face12
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(fg:erc-color-face13
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(fg:erc-color-face14
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(fg:erc-color-face15
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(bg:erc-color-face0
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face1
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face2
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face3
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face4
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face5
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face6
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face7
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face8
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face9
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face10
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face11
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face12
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face13
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face14
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(bg:erc-color-face15
+      ((,class (:background ,soria-darkgray :weight normal))))
+
+    `(erc-timestamp-face
+      ((,class (:background ,soria-white :weight normal))))
+
+    `(erc-button
+      ((,class (:weight normal))))
+
+    ;; circe
+
+    `(circe-highlight-all-nicks-face
+      ((,class (:foreground ,soria-green :weight normal))))
+
+    `(circe-prompt-face
+      ((,class (:background ,soria-black :foreground ,soria-white :weight normal))))
+
+    `(circe-server-face
+      ((,class (:foreground ,soria-blue :weight normal))))
+
+    `(circe-fool-face
+      ((,class (:foreground ,soria-gray :weight normal))))
+
+    `(lui-track-bar
+      ((,class (:inherit default))))
+
+    `(lui-irc-colors-fg-0-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(lui-irc-colors-fg-1-face
+      ((,class (:foreground ,soria-green :weight normal))))
+
+    `(lui-irc-colors-fg-2-face
+      ((,class (:foreground ,soria-blue :weight normal))))
+
+    `(lui-irc-colors-fg-3-face
+      ((,class (:foreground ,soria-purple :weight normal))))
+
+    `(lui-irc-colors-fg-4-face
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(lui-irc-colors-fg-5-face
+      ((,class (:foreground ,soria-redpastel :weight normal))))
+
+    `(lui-irc-colors-fg-6-face
+      ((,class (:foreground ,soria-orange :weight normal))))
+
+    `(lui-irc-colors-fg-7-face
+      ((,class (:foreground ,soria-darkgreen :weight normal))))
+
+    `(lui-irc-colors-fg-8-face
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(lui-irc-colors-fg-9-face
+      ((,class (:foreground ,soria-darkpurple :weight normal))))
+
+    `(lui-irc-colors-fg-10-face
+      ((,class (:foreground ,soria-brightgreen :weight normal))))
+
+    `(lui-irc-colors-fg-11-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(lui-irc-colors-fg-12-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(lui-irc-colors-fg-13-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(lui-irc-colors-fg-14-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(lui-irc-colors-fg-15-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(lui-irc-colors-fg-16-face
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    ;; org-mode
+    ;; TODO
+
+    ; TODO: I'm in org-drawer
+
+    `(org-todo
+      ((,class (:foreground ,soria-redpastel :weight normal))))
+
+    `(org-done
+      ((,class (:inherit success :weight normal))))
+
+    ;; TODO
+    ))
 
 ;; And finally hook the defined font locks and call provide-theme.
 
@@ -986,5 +1242,3 @@ identifiers"
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
-
-;;; soria-theme.el ends here
