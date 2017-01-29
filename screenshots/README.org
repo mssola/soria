@@ -1,0 +1,13 @@
+* Screenshots
+
+** C
+
+[[./c.png]]
+
+** Go
+
+[[./go.png]]
+
+** GNU Emacs Lisp
+
+[[./elisp.png]]
