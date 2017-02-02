@@ -1156,7 +1156,7 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:background ,soria-darkgray :weight normal))))
 
     `(erc-timestamp-face
-      ((,class (:background ,soria-white :weight normal))))
+      ((,class (:background ,soria-darkgray :foreground ,soria-gray :weight normal))))
 
     `(erc-button
       ((,class (:weight normal))))
