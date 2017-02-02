@@ -77,8 +77,7 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
     (list (concat "\\<\\(" font-lock-hexnumber "\\)\\>" )
      0 font-lock-number-face)
     (list (concat "\\<\\(" font-lock-binnumber "\\)\\>" )
-     0 font-lock-number-face)))
-)
+     0 font-lock-number-face))))
 
 ;; The color theme itself.
 
@@ -784,6 +783,7 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:inherit magit-blame-heading))))
 
     ;; diff
+
     `(diff-added
       ((,class (:foreground ,soria-green :background ,soria-darkgray))))
 
@@ -809,6 +809,7 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:background ,soria-redpastel :foreground ,soria-darkgray))))
 
     ;; diff-hl
+
     `(diff-hl-change
       ((,class (:background ,soria-darkpurple :foreground ,soria-whitest))))
 
@@ -822,6 +823,7 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:background ,soria-darkpurple :foreground ,soria-whitest))))
 
     ;; sh-mode
+
     `(sh-heredoc
       ((,class (:foreground ,soria-yellow :weight normal))))
 
@@ -832,6 +834,7 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:foreground ,soria-redpastel :weight normal))))
 
     ;; message-mode
+
     `(message-cited-text
       ((,class (:foreground ,soria-gray :weight normal))))
 
@@ -1014,8 +1017,11 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
     `(erc-header-line-face
       ((,class (:foreground ,soria-linegray :background ,soria-darkgray :weight normal))))
 
+    `(erc-header-line
+      ((,class (:foreground ,soria-linegray :background ,soria-darkgray :weight normal))))
+
     `(erc-input-face
-      ((,class (:foreground ,soria-yellow :weight normal))))
+      ((,class (:foreground ,soria-white :weight normal))))
 
     `(erc-prompt-face
       ((,class (:foreground ,soria-white :background ,soria-darkgray :weight normal))))
@@ -1027,16 +1033,31 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:foreground ,soria-redpastel :weight normal))))
 
     `(erc-my-nick-face
-      ((,class (:foreground ,soria-yellow :weight normal))))
+      ((,class (:foreground ,soria-white :weight normal))))
 
     `(erc-nick-default-face
       ((,class (:weight normal))))
 
     `(erc-nick-msg-face
-      ((,class (:foreground ,soria-redpastel :weight normal))))
+      ((,class (:foreground ,soria-white :weight normal))))
 
     `(erc-inverse-face
       ((,class (:foreground ,soria-black :background ,soria-white :weight normal))))
+
+    `(erc-nick-prefix-face
+      ((,class (:inherit erc-nick-default-face))))
+
+    `(erc-my-nick-prefix-face
+      ((,class (:inherit erc-nick-default-face))))
+
+    `(erc-direct-msg-face
+      ((,class (:foreground ,soria-green :weight normal))))
+
+    `(erc-command-indicator-face
+      ((,class (:weight normal))))
+
+    `(erc-action-face
+      ((,class (:weight normal))))
 
     `(fg:erc-color-face0
       ((,class (:foreground ,soria-white :weight normal))))
@@ -1066,7 +1087,7 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:foreground ,soria-whitest :weight normal))))
 
     `(fg:erc-color-face9
-      ((,class (:foreground ,soria-darkpurple :weight normal))))
+      ((,class (:foreground ,soria-purple :weight normal))))
 
     `(fg:erc-color-face10
       ((,class (:foreground ,soria-brightgreen :weight normal))))
@@ -1218,6 +1239,9 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
 
     `(org-done
       ((,class (:inherit success :weight normal))))
+
+    `(org-date
+      ((,class (:foreground ,soria-gray, :weight normal :underline nil))))
 
     ;; TODO
     ))
