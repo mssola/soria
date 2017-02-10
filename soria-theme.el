@@ -280,6 +280,40 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
     `(custom-state
       ((,class (:foreground ,soria-yellow))))
 
+    ;; Info
+
+    `(info-node
+      ((,class (:foreground ,soria-white
+                :background ,soria-darkgray))))
+
+    `(info-title
+      ((,class (:foreground ,soria-white
+                :background ,soria-darkgray
+                :weight bold))))
+
+    `(info-title-2
+      ((,class (:foreground ,soria-white
+                :background ,soria-darkgray
+                :weight normal))))
+
+    `(info-title-3
+      ((,class (:foreground ,soria-white
+                :background ,soria-darkgray
+                :weight normal))))
+
+    `(info-title-4
+      ((,class (:foreground ,soria-white
+                :background ,soria-darkgray
+                :weight normal))))
+
+    `(info-menu-header
+      ((,class (:weight normal))))
+
+    `(info-menu-star
+      ((,class (:foreground ,soria-white
+                :background ,soria-darkgray
+                :weight normal))))
+
     ;; outline
     `(outline-1
       ((,class (:inherit org-level-1))))
