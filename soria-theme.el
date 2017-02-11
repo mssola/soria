@@ -1300,3 +1300,5 @@ identifiers"
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
+
+;;; soria-theme.el ends here
