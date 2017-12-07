@@ -415,6 +415,10 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
                 :foreground ,soria-white
                 :underline nil))))
 
+    `(helm-M-x-key
+      ((,class (:foreground ,soria-orange
+                :underline nil))))
+
     `(helm-separator
       ((,class (:foreground ,soria-gray))))
 
