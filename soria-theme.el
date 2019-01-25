@@ -820,6 +820,17 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
     `(magit-blame-date
       ((,class (:inherit magit-blame-heading))))
 
+    ;; git-timemachine
+
+    `(git-timemachine-commit
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(git-timemachine-minibuffer-detail-face
+      ((,class (:foreground ,soria-yellow :weight normal))))
+
+    `(git-timemachine-minibuffer-author-face
+      ((,class (:foreground ,soria-blue :weight normal))))
+
     ;; diff
 
     `(diff-added
