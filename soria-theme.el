@@ -1279,9 +1279,45 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:foreground ,soria-white :weight normal))))
 
     ;; org-mode
-    ;; TODO
 
-    ; TODO: I'm in org-drawer
+    `(org-document-title
+      ((,class (:foreground ,soria-whitest :weight bold))))
+
+    `(org-document-info
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(org-level-1
+      ((,class (:foreground ,soria-whitest :weight bold))))
+
+    `(org-level-2
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(org-level-3
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(org-level-4
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(org-level-5
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(org-level-6
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(org-level-7
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(org-level-8
+      ((,class (:foreground ,soria-whitest :weight normal))))
+
+    `(org-footnote
+      ((,class (:foreground ,soria-blue :weight normal :underline nil))))
+
+    `(org-table
+      ((,class (:foreground ,soria-white :weight normal))))
+
+    `(org-formula
+      ((,class (:foreground ,soria-yellow :weight normal))))
 
     `(org-todo
       ((,class (:foreground ,soria-redpastel :weight normal))))
@@ -1289,10 +1325,14 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
     `(org-done
       ((,class (:inherit success :weight normal))))
 
+    `(org-agenda-done
+      ((,class (:inherit org-done))))
+
+    `(org-headline-done
+      ((,class (:inherit org-done))))
+
     `(org-date
       ((,class (:foreground ,soria-gray, :weight normal :underline nil))))
-
-    ;; TODO
     ))
 
 ;; And finally hook the defined font locks and call provide-theme.
