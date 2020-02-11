@@ -482,6 +482,11 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,class (:foreground ,soria-green
                 :underline nil))))
 
+    ;; Makefile
+
+    `(makefile-space
+      ((,class (:background ,soria-darkpurple))))
+
     ;; eshell
 
     `(eshell-prompt
