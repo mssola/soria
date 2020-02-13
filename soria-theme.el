@@ -476,6 +476,15 @@ It adds to font-lock-number-face decimal, octal, hex and bin formats."
       ((,(append '((supports :underline (:style wave))) class)
         (:underline (:style wave :color ,soria-redpastel) :inherit unspecified))))
 
+    ;; languagetool
+    `(langtool-errline
+      ((,(append '((supports :underline (:style wave))) class)
+       (:underline (:style wave :color ,soria-redpastel) :inherit unspecified))))
+
+    `(langtool-correction-face
+      ((,(append '((supports :underline (:style wave))) class)
+       (:underline (:style wave :color ,soria-green) :inherit unspecified))))
+
     ;; eldoc
 
     `(eldoc-highlight-function-argument
