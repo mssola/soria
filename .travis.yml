@@ -1,0 +1,15 @@
+language: nix
+sudo: true
+
+env:
+  - EMACS_CI=emacs-25-3
+  - EMACS_CI=emacs-26-3
+  - EMACS_CI=emacs-snapshot
+
+install:
+  - bash <(curl https://raw.githubusercontent.com/purcell/nix-emacs-ci/master/travis-install)
+  - sudo apt-get install golang
+  - go get -u github.com/vbatts/git-validation
+
+script:
+  - make ci
