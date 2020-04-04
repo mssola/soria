@@ -5,20 +5,20 @@
 
 ---
 
-Soria is a color theme which mixes:
+**Soria** is a color theme which mixes:
 
 - [xoria256](http://www.vim.org/scripts/script.php?script_id=2140): a color
   theme by Dmitry Zotikov, originally for Vim. I did not do the initial porting
-  from Vim to Emacs, I took it from [[https://github.com/suxue/xoria256-emacs][suxue]].
+  from Vim to Emacs, I took it from [suxue](https://github.com/suxue/xoria256-emacs).
 - openSUSE: I took some colors from [openSUSE's Brand Guidelines](http://opensuse.github.io/branding-guidelines/).
 
 In the `soria-theme.el` file I list further acknowledgements. To install it,
-just drop the =soria-theme.el= file into your `~/.emacs.d` and load it with
+just drop the `soria-theme.el` file into your `~/.emacs.d` and load it with
 `load-theme`.
 
 ## Configuration
 
-This color theme defines the =soria= group, which in turn has only one
+This color theme defines the `soria` group, which in turn has only one
 configuration option:
 
 - `soria-theme-hide-helm-header`: the Helm package in combination with
@@ -39,7 +39,7 @@ function so in other languages can be drawn in purple.
 
 ## Screenshots
 
-I've saved some screenshots in the =screenshots= directory. They do not show a
+I've saved some screenshots in the `screenshots` directory. They do not show a
 full sample of all the defined colors, but it will give you a good idea of the
 look and feel of this theme. A glimpse:
 
