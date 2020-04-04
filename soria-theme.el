@@ -65,7 +65,7 @@ The theme has to be reloaded after changing anything in this group."
 
 (defun soria-theme-add-font-lock-numbers ()
   "Add to the list of keywords numeric formats.
-It adds to font-lock-number-face decimal, octal, hex and bin formats."
+It adds to `font-lock-number-face' decimal, octal, hex and bin formats."
 
   (defvar soria-theme-font-lock-number    "[0-9]+\\([eE][+-]?[0-9]*\\)?")
   (defvar soria-theme-font-lock-hexnumber "0[xX][0-9a-fA-F]+")
