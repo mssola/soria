@@ -73,4 +73,7 @@ endif
 .PHONY: load-test
 load-test:
 	@$(BATCH) -nw --load soria-theme.el \
-		--eval "(progn (load-theme 'soria t) (message \"%s\" soria-theme-hide-helm-header))"
+		--eval "(progn \
+		          (add-to-list 'custom-theme-load-path \"$(TOP)\") \
+		          (load-theme 'soria t) \
+		          (message \"%s\" soria-theme-hide-helm-header))"

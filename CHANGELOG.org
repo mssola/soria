@@ -1,0 +1,27 @@
+#+STARTUP:showall
+
+* Changelog
+
+** 0.2
+
+- Vastly improved Helm support. See: [[https://github.com/mssola/soria/commit/50cb01c02fb1e1afd06ae4d71f360af7ceeee705][50cb01c02fb1]], [[https://github.com/mssola/soria/commit/ec8ad9aaca77a84d760a560a4d71cce5fbd400e9][ec8ad9aaca77]], [[https://github.com/mssola/soria/commit/e0c5c1d2825629656e3686e99c8e5bf1103eef30][e0c5c1d28256]] and [[https://github.com/mssola/soria/commit/0add65fff0288c51e6c9b6ba3a7aa3807d7dc111][0add65fff028]].
+- Set =ansi-color-names=. See: [[https://github.com/mssola/soria/commit/fae3356c50bd59d7687e58f421fd0e830f85c5b3][fae3356c50bd]].
+- Added flycheck and flyspell support. See: [[https://github.com/mssola/soria/commit/188e354c488ce9018fa6305f76562cf98cc9f182][188e354c488c]] and [[https://github.com/mssola/soria/commit/efcd5ca9a870cf96f2061d71be381250f75d7954][efcd5ca9a870]].
+- Added eldoc and eshell support. See: [[https://github.com/mssola/soria/commit/f3f2e3155c400e47f3ccc5c05e830a70c3addbe3][f3f2e3155c40]].
+- Added the =soria-purple-identifiers= function (later renamed to soria-theme-purple-identifiers in [[https://github.com/mssola/soria/commit/eb47656463e5977b2cee8372d06193d4ae27c65c][eb47656463e5]]). See: [[https://github.com/mssola/soria/commit/533964d56966b9570bacf5534005140c4240250f][533964d56966]].
+- Added =rainbow-delimiters= support. See: [[https://github.com/mssola/soria/commit/016a8600f19854c21a8097fbb3bbd658d22b3a5a][016a8600f198]].
+- Added =diff= and =diff-hl= support. See: [[https://github.com/mssola/soria/commit/f76679da8d209f0e200b1ee6c41ff0de78560b00][f76679da8d20]].
+- Added =sh-mode= support. See: [[https://github.com/mssola/soria/commit/dfa4189848b3f949e34abdc2753021678a598fdc][dfa4189848b3]].
+- Added support for =message-mode= and =mu4e=. See: [[https://github.com/mssola/soria/commit/ec47e39b2901b27c80ceb9f18294033f72257a9d][ec47e39b2901]].
+- Added support for =evil-mode=. See: [[https://github.com/mssola/soria/commit/fd6ec3ae9fb19ff2d0d3fe3156bed17f016d462e][fd6ec3ae9fb1]].
+- Added support for =magit=. See: [[https://github.com/mssola/soria/commit/e202214028ce460e0be298be53d8570fc4f581cb][e202214028ce]].
+- Added support for =circe= and =ERC=. See: [[https://github.com/mssola/soria/commit/fde50afdffc9400946ac4eba3f66cb086dc344bc][fde50afdffc9]], [[https://github.com/mssola/soria/commit/aebdd1a30e34de9f5a1243fa3316fd68e396acda][aebdd1a30e34]] and [[https://github.com/mssola/soria/commit/00e96e38507d85f16feb9fb02c7ed9cf36a6e97d][00e96e38507d]].
+- Added support for =info mode=. See: [[https://github.com/mssola/soria/commit/9de7e059fcb1ac738475101ee053d281dd81c966][9de7e059fcb1]].
+- Added support for =git-timemachine=. See [[https://github.com/mssola/soria/commit/161c8e92c2fa2f26fdc8752e2ecec5ef4e44b43b][161c8e92c2fa]].
+- Added support for =org-mode=. See [[https://github.com/mssola/soria/commit/9f2e2093f5f16c6222b3ee46dda3e2d8e3df7dc7][9f2e2093f5f1]].
+- Adding =,soria-purple= for trailing whitespaces in =makefile mode=. See: [[https://github.com/mssola/soria/commit/05f456d134f925d596e8357d331239143c08890b][05f456d134f9]].
+- Added support for =langtool.el=. See: [[https://github.com/mssola/soria/commit/26700775e4d11a40a407dfe8e6b73346d3c6648b][26700775e4d1]].
+
+** 0.1
+
+- Initial commit.
