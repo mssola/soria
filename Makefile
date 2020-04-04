@@ -29,7 +29,7 @@ clean:
 ci: version all
 
 .PHONY: test
-test: lint git-validation load-test
+test: lint git-validation checkdoc load-test
 
 # Maybe it would've been nicer to use Cask or something like that, but it
 # doesn't have too many dependencies so it should be fine for now.
@@ -77,3 +77,8 @@ load-test:
 		          (add-to-list 'custom-theme-load-path \"$(TOP)\") \
 		          (load-theme 'soria t) \
 		          (message \"%s\" soria-theme-hide-helm-header))"
+
+.PHONY: checkdoc
+checkdoc:
+	@chmod +x ./bin/checkdoc.sh
+	@./bin/checkdoc.sh $(BATCH) -nw --load soria-theme.el
