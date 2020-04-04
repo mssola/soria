@@ -39,9 +39,9 @@ function so in other languages can be drawn in purple.
 
 ## Screenshots
 
-I've saved some screenshots in the `screenshots` directory. They do not show a
-full sample of all the defined colors, but it will give you a good idea of the
-look and feel of this theme. A glimpse:
+I've saved some screenshots in the [screenshots](./screenshots) directory. They
+do not show a full sample of all the defined colors, but it will give you a good
+idea of the look and feel of this theme. A glimpse:
 
 ![Overview screenshot](screenshots/c.png)
 

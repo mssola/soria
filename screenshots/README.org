@@ -1,8 +1,14 @@
-* Screenshots
-
 ** C
 
 [[./c.png]]
+
+** Ruby
+
+[[./ruby.png]]
+
+** Javascript
+
+[[./javascript.png]]
 
 ** Go
 
