@@ -2,6 +2,13 @@
 
 * Changelog
 
+** 0.3.0
+
+- Added a =checkdoc= make target. See [[https://github.com/mssola/soria/commit/c3551def989ca5418468b64939f991ed042eabf1][c3551def989c]].
+- In the process of submitting this theme to melpa (see [[https://github.com/melpa/melpa/pull/6808][melpa#6808]]), there have been some further improvements:
+  - Enable byte compiling and lexical binding. See [[https://github.com/mssola/soria/commit/eb0d6621c991557964823c8af326a5dfdc56dd6f][eb0d6621c991]].
+  - Use =highlight-numbers-number= instead of hacking my own parser. See [[https://github.com/mssola/soria/commit/57709c323c9c94717626fffd496236a8f1eb8e08][57709c323c9c]].
+
 ** 0.2
 
 - Vastly improved Helm support. See: [[https://github.com/mssola/soria/commit/50cb01c02fb1e1afd06ae4d71f360af7ceeee705][50cb01c02fb1]], [[https://github.com/mssola/soria/commit/ec8ad9aaca77a84d760a560a4d71cce5fbd400e9][ec8ad9aaca77]], [[https://github.com/mssola/soria/commit/e0c5c1d2825629656e3686e99c8e5bf1103eef30][e0c5c1d28256]] and [[https://github.com/mssola/soria/commit/0add65fff0288c51e6c9b6ba3a7aa3807d7dc111][0add65fff028]].
