@@ -23,6 +23,12 @@ version:
 clean:
 	@rm -rf $(TOP)vendor/* $(PKG)-autoloads.el* $(OBJECTS)
 
+.PHONY: build
+build: $(OBJECTS)
+
+$(OBJECTS): %.elc: %.el
+	@$(BATCH) --kill -l bytecomp --eval '(byte-recompile-file (expand-file-name "$(TOP)$<") nil 0)'
+
 ##
 # Test
 
