@@ -55,30 +55,6 @@ The theme has to be reloaded after changing anything in this group."
   :type 'boolean
   :group 'soria)
 
-;; First of all, let's create our own font-lock for numbers.
-
-(make-face 'font-lock-number-face)
-(set-face-attribute 'font-lock-number-face nil :inherit font-lock-constant-face)
-(setq font-lock-number-face 'font-lock-number-face)
-
-(defun soria-theme-add-font-lock-numbers ()
-  "Add to the list of keywords numeric formats.
-It adds to `font-lock-number-face' decimal, octal, hex and bin formats."
-
-  (defvar soria-theme-font-lock-number    "[0-9]+\\([eE][+-]?[0-9]*\\)?")
-  (defvar soria-theme-font-lock-hexnumber "0[xX][0-9a-fA-F]+")
-  (defvar soria-theme-font-lock-binnumber "0[bB][01]+")
-
-  (font-lock-add-keywords
-   nil
-   (list
-    (list (concat "\\<\\(" soria-theme-font-lock-number "\\)\\>" )
-          0 font-lock-number-face)
-    (list (concat "\\<\\(" soria-theme-font-lock-hexnumber "\\)\\>" )
-          0 font-lock-number-face)
-    (list (concat "\\<\\(" soria-theme-font-lock-binnumber "\\)\\>" )
-          0 font-lock-number-face))))
-
 ;; The color theme itself.
 
 (let*
@@ -227,6 +203,11 @@ It adds to `font-lock-number-face' decimal, octal, hex and bin formats."
 
    `(font-lock-warning-face
      ((,class (:foreground ,soria-green))))
+
+   ;; highlight-numbers
+
+   `(highlight-numbers-number
+     ((,class (:foreground ,soria-orange))))
 
    ;; Search
 
@@ -1365,10 +1346,6 @@ It adds to `font-lock-number-face' decimal, octal, hex and bin formats."
 
    `(org-date
      ((,class (:foreground ,soria-gray, :weight normal :underline nil))))))
-
-;; And finally hook the defined font locks and call provide-theme.
-
-(add-hook 'prog-mode-hook 'soria-theme-add-font-lock-numbers)
 
 (defun soria-theme-purple-identifiers ()
   "Make function identifiers purple.

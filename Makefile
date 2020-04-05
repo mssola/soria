@@ -4,6 +4,7 @@ PKG = soria
 
 ELS_ALL = $(wildcard *.el)
 ELS = $(filter-out $(PKG)-autoloads.el,$(ELS_ALL))
+OBJECTS = $(ELS:.el=.elc)
 
 EMACS ?= emacs
 BATCH = $(EMACS) --quick --batch $(LOAD_PATH)
@@ -20,7 +21,7 @@ version:
 
 .PHONY: clean
 clean:
-	@rm -rf $(TOP)vendor/* $(PKG)-autoloads.el*
+	@rm -rf $(TOP)vendor/* $(PKG)-autoloads.el* $(OBJECTS)
 
 ##
 # Test
