@@ -9,33 +9,13 @@
 
 - [xoria256](http://www.vim.org/scripts/script.php?script_id=2140): a color
   theme by Dmitry Zotikov, originally for Vim. I did not do the initial porting
-  from Vim to Emacs, I took it from [suxue](https://github.com/suxue/xoria256-emacs).
+  from Vim to GNU Emacs, I took it from
+  [suxue](https://github.com/suxue/xoria256-emacs).
 - openSUSE: I took some colors from [openSUSE's Brand Guidelines](http://opensuse.github.io/branding-guidelines/).
 
 In the `soria-theme.el` file I list further acknowledgements. To install it,
 just drop the `soria-theme.el` file into your `~/.emacs.d` and load it with
 `load-theme`.
-
-## Configuration
-
-This color theme defines the `soria` group, which in turn has only one
-configuration option:
-
-- `soria-theme-hide-helm-header`: the Helm package in combination with
-  Projectile shows a header that in my humble opinion is quite useless and it's
-  distracting. For this reason, this header is hidden by default. If you set it
-  to false, then you'll see the header with the same colors as the status line.
-
-Moreover, this theme also provides one function that can be used as a hook:
-`soria-theme-purple-identifiers`. As a reminder, this color theme is a port from
-Vim, and Vim and Emacs have some different takes on function identifiers. As
-such, the original Vim theme defines identifiers as purple, but only method
-definitions in Ruby, Perl and PHP (languages that I've used with these theme,
-there might be more) were highlighted this way, but that wasn't the case for C,
-C++ or Go. This is certainly a bug in Vim, but I got used to it, and when doing
-this port I could notice this a lot. For this reason, by default this color
-theme for Emacs defines function identifiers as white, but it provides this
-function so in other languages can be drawn in purple.
 
 ## Screenshots
 
@@ -44,6 +24,97 @@ do not show a full sample of all the defined colors, but it will give you a good
 idea of the look and feel of this theme. A glimpse:
 
 ![Overview screenshot](screenshots/c.png)
+
+## Installation
+
+### package.el (recommended)
+
+This theme is in the [process of getting included into
+MELPA](https://github.com/melpa/melpa/pull/6808). Whenever that is done, you
+will be able to fetch this theme with `package.el` like so:
+
+`M-x package-install soria-theme`
+
+To load it automatically on GNU Emacs startup add this to your init file:
+
+```elisp
+(load-theme 'soria t)
+```
+
+### Manual
+
+Simply download the `soria-theme.el` file into your `~/.emacs.d/` and then load
+it like so:
+
+`M-x load-theme RET soria`
+
+If you want to move this file into another directory, make sure that this
+directory is inside of the `custom-theme-load-path` list. You can do this by
+running the following lisp code:
+
+```elisp
+(add-to-list 'custom-theme-load-path "/home/user/my/themes/directory")
+```
+
+### openSUSE
+
+I have also created a package inside of [my personal OBS
+project](https://build.opensuse.org/package/show/home:mssola/soria-theme). You
+can add that repository and then perform:
+
+```
+$ sudo zypper install soria-theme
+```
+
+Note that this RPM installs the relevant file in
+`/usr/share/emacs/site-lisp/themes`. You have to make sure that this directory
+is inside of the `custom-theme-load-path` list. You can do this by running the
+following lisp code:
+
+```elisp
+(add-to-list 'custom-theme-load-path "/usr/share/emacs/site-lisp/themes")
+```
+
+Then you can load this theme as usual:
+
+`M-x load-theme RET soria`
+
+## Customization
+
+### soria-theme-hide-helm-header
+
+This color theme defines the `soria` group, which in turn has only one
+configuration option: `soria-theme-hide-helm-header`.
+
+The Helm package in combination with Projectile shows a header that in my humble
+opinion is quite useless and it's distracting. For this reason, this header is
+hidden by default. If you set it to false, then you'll see the header with the
+same colors as the status line.
+
+### soria-theme-purple-identifiers
+
+This theme also provides one function that can be used as a hook:
+`soria-theme-purple-identifiers`.
+
+As a reminder, this color theme is a port from Vim, and Vim and GNU Emacs have
+some different takes on function identifiers. As such, the original Vim theme
+defines identifiers as purple, but only method definitions in Ruby, Perl and PHP
+(languages that I've used with these theme, there might be more) were
+highlighted this way, but that wasn't the case for C, C++ or Go. This is
+certainly a bug in Vim, but I got used to it, and when doing this port I could
+notice this a lot. For this reason, by default this color theme for GNU Emacs
+defines function identifiers as white, but it provides this function so in other
+languages can be drawn in purple.
+
+You may turn identifiers into purple with a code like this:
+
+```elisp
+(dolist (lang-hook '(ruby-mode-hook
+                     php-mode-hook
+                     perl-mode-hook
+                     emacs-lisp-mode-hook))
+  (add-hook lang-hook 'soria-theme-purple-identifiers))
+```
 
 ## Contributing
 
