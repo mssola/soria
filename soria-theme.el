@@ -1,4 +1,4 @@
-;;; soria-theme.el --- A xoria256 theme with some colors from openSUSE
+;;; soria-theme.el --- A xoria256 theme with some colors from openSUSE -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016-2020 Miquel Sabaté Solà <mikisabate@gmail.com>
 ;;
@@ -17,6 +17,7 @@
 
 ;; Author: Miquel Sabaté Solà <mikisabate@gmail.com>
 ;; Version: 0.2
+;; Package-Requires: ((emacs "25.1"))
 ;; Keywords: faces
 ;; URL: https://github.com/mssola/soria
 
@@ -41,9 +42,6 @@
 ;;; Code:
 
 ;; Defining the theme and its configuration group.
-
-(unless (>= emacs-major-version 24)
-  (error "The soria theme requires Emacs 24 or later!"))
 
 (deftheme soria "A xoria256 theme with some colors from openSUSE")
 
@@ -1387,9 +1385,5 @@ identifiers"
 
 ;; Make package-lint happy. This file is not meant to be used as a library.
 (provide 'soria-theme)
-
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
 
 ;;; soria-theme.el ends here
