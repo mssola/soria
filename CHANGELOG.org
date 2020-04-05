@@ -2,6 +2,10 @@
 
 * Changelog
 
+** 0.3.1
+
+- Added a =build= target to the Makefile. See [[https://github.com/mssola/soria/commit/524b5a1830df4dc90a7a5fce6e06f5f4d9f77904][524b5a1830df]].
+
 ** 0.3.0
 
 - Added a =checkdoc= make target. See [[https://github.com/mssola/soria/commit/c3551def989ca5418468b64939f991ed042eabf1][c3551def989c]].
