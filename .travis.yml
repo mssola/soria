@@ -1,6 +1,9 @@
 language: nix
 sudo: true
 
+git:
+  depth: false
+
 env:
   # The minimum required plus the latest from each major release plus the next
   # release.
