@@ -15,9 +15,7 @@
   [suxue](https://github.com/suxue/xoria256-emacs).
 - openSUSE: I took some colors from [openSUSE's Brand Guidelines](http://opensuse.github.io/branding-guidelines/).
 
-In the `soria-theme.el` file I list further acknowledgements. To install it,
-just drop the `soria-theme.el` file into your `~/.emacs.d` and load it with
-`load-theme`.
+In the `soria-theme.el` file I list further acknowledgements.
 
 ## Screenshots
 
