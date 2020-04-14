@@ -1351,8 +1351,10 @@ The theme has to be reloaded after changing anything in this group."
   "Make function identifiers purple.
 This function might be used as a hook for modes that prefer having purple
 function identifiers instead of the default white.  This might seem hackish,
-but it tries to workaround discrepencies between Vim and Emacs in terms of
+but it tries to workaround discrepancies between Vim and Emacs in terms of
 identifiers"
+
+  (interactive)
 
   (let ((soria-purple "#dfafdf"))
     (set (make-local-variable 'face-remapping-alist)

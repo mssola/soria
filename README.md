@@ -93,7 +93,7 @@ same colors as the status line.
 
 ### soria-theme-purple-identifiers
 
-This theme also provides one function that can be used as a hook:
+This theme also provides one interactive function that can be used as a hook:
 `soria-theme-purple-identifiers`.
 
 As a reminder, this color theme is a port from Vim, and Vim and GNU Emacs have
