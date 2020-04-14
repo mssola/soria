@@ -1,4 +1,6 @@
 <p align="center">
+  <a href="https://melpa.org/#/soria-theme"><img alt="MELPA" src="https://melpa.org/packages/soria-theme-badge.svg"/></a>
+  <a href="https://stable.melpa.org/#/soria-theme"><img alt="MELPA Stable" src="https://stable.melpa.org/packages/soria-theme-badge.svg"/></a>
   <a href="https://travis-ci.org/mssola/soria" title="Travis CI status for the master branch"><img src="https://travis-ci.org/mssola/soria.svg?branch=master" alt="Build Status for master branch" /></a>
   <a href="http://www.gnu.org/licenses/gpl-3.0.txt" rel="nofollow"><img alt="License GPL 3" src="https://img.shields.io/badge/license-GPL_3-blue.svg" style="max-width:100%;"></a>
 </p>
@@ -29,9 +31,9 @@ idea of the look and feel of this theme. A glimpse:
 
 ### package.el (recommended)
 
-This theme is in the [process of getting included into
-MELPA](https://github.com/melpa/melpa/pull/6808). Whenever that is done, you
-will be able to fetch this theme with `package.el` like so:
+This theme is available from [MELPA](https://melpa.org/#/soria-theme) and [MELPA
+stable](https://stable.melpa.org/#/soria-theme). Thus, you can install this
+theme like so:
 
 `M-x package-install soria-theme`
 
@@ -39,6 +41,22 @@ To load it automatically on GNU Emacs startup add this to your init file:
 
 ```elisp
 (load-theme 'soria t)
+```
+
+You can also use [use-package](https://github.com/jwiegley/use-package) for
+this, with a configuration like:
+
+```elisp
+(use-package soria-theme
+  :ensure t
+  :config
+  (load-theme 'soria t)
+
+  (dolist (lang-hook '(ruby-mode-hook
+                       php-mode-hook
+                       perl-mode-hook
+                       emacs-lisp-mode-hook))
+    (add-hook lang-hook 'soria-theme-purple-identifiers)))
 ```
 
 ### Manual
