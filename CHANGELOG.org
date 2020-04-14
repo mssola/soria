@@ -4,7 +4,7 @@
 
 ** 0.3.2
 
-- Changed =soria-theme-purple-identifiers= so it's interactive.
+- Changed =soria-theme-purple-identifiers= so it's interactive. See [[https://github.com/mssola/soria/commit/ababa4f383fc038a3b03babb99e7dbbc4f1aa3aa][ababa4f383fc]].
 
 ** 0.3.1
 
