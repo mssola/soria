@@ -33,7 +33,7 @@ This theme is available from [MELPA](https://melpa.org/#/soria-theme) and [MELPA
 stable](https://stable.melpa.org/#/soria-theme). Thus, you can install this
 theme like so:
 
-`M-x package-install soria-theme`
+`M-x package-install RET soria-theme`
 
 To load it automatically on GNU Emacs startup add this to your init file:
 
