@@ -1345,7 +1345,44 @@ The theme has to be reloaded after changing anything in this group."
      ((,class (:inherit org-done))))
 
    `(org-date
-     ((,class (:foreground ,soria-gray, :weight normal :underline nil))))))
+     ((,class (:foreground ,soria-gray, :weight normal :underline nil))))
+
+   ;; modeline: this is the base for faces from some modelines (doom-modeline).
+
+   `(mode-line-emphasis
+     ((,class (:foreground ,soria-white :inherit bold))))
+
+   `(mode-line-buffer-id
+     ((,class (:foreground ,soria-white :inherit bold))))
+
+   `(mode-line-highlight
+     ((,class (:foreground ,soria-yellow))))
+
+   ;; doom-modeline
+
+   `(doom-modeline-buffer-modified
+     ((,class (:foreground ,soria-orange :weight normal))))
+
+   `(doom-modeline-buffer-path
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(doom-modeline-project-dir
+     ((,class (:foreground ,soria-yellow :weight normal))))
+
+   `(doom-modeline-evil-emacs-state
+     ((,class (:foreground ,soria-darkpurple :weight bold))))
+
+   `(doom-modeline-evil-insert-state
+     ((,class (:foreground ,soria-orange :weight bold))))
+
+   `(doom-modeline-evil-visual-state
+     ((,class (:foreground ,soria-purple :weight bold))))
+
+   `(doom-modeline-info
+     ((,class (:foreground ,soria-green :weight normal))))
+
+   `(doom-modeline-warning
+     ((,class (:foreground ,soria-orange :weight normal))))))
 
 (defun soria-theme-purple-identifiers ()
   "Make function identifiers purple.
