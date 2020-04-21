@@ -1347,6 +1347,10 @@ The theme has to be reloaded after changing anything in this group."
    `(org-date
      ((,class (:foreground ,soria-gray, :weight normal :underline nil))))
 
+   `(org-drawer ((,class (:inherit org-done))))
+
+   `(org-special-keyword ((,class (:inherit org-done))))
+
    ;; modeline: this is the base for faces from some modelines (doom-modeline).
 
    `(mode-line-emphasis
