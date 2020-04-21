@@ -388,8 +388,7 @@ The theme has to be reloaded after changing anything in this group."
      ((,class (:foreground ,soria-blue :underline nil))))
 
    `(helm-selection
-     ((,class (:background ,soria-linegray,
-                           :underline nil))))
+     ((,class (:background ,soria-linegray,:underline nil :extend t))))
 
    `(helm-selection-line
      ((,class (:background ,soria-linegray
