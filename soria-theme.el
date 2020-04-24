@@ -413,7 +413,35 @@ The theme has to be reloaded after changing anything in this group."
                              :foreground ,soria-white
                              :underline nil)))))
 
-                                        ; ansi color names
+   ;; company-mode
+
+   `(company-tooltip
+     ((,class (:background ,soria-darkgray))))
+
+   `(company-tooltip-selection
+     ((,class (:inherit helm-selection))))
+
+   `(company-tooltip-common
+     ((,class (:foreground ,soria-green))))
+
+   `(company-scrollbar-fg
+     ((,class (:background ,soria-white))))
+
+   `(company-scrollbar-bg
+     ((,class (:background ,soria-statusgray))))
+
+   `(company-preview-search
+     ((,class (:background ,soria-white))))
+
+   ;; company-box
+
+   `(company-box-candidate
+     ((,class (:foreground ,soria-white))))
+
+   `(company-box-scrollbar
+     ((,class (:inherit company-scrollbar-fg))))
+
+   ;; ansi color names
    (custom-theme-set-variables
     'soria
     `(ansi-color-names-vector
