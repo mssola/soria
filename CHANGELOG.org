@@ -4,7 +4,10 @@
 
 ** Next
 
-- Added support for =mode-line= and =doom-modeline=.
+- Added support for =company-mode= and =company-box=. See [[https://github.com/mssola/soria/commit/390f03333e2e6083ee5d7f9b36c2e794105cf466][390f03333e2e]].
+- Fixed Helm selection for GNU Emacs 27.x. See [[https://github.com/mssola/soria/commit/41520c0418a2a5468ac7696159a7dedb558187a7][41520c0418a2]].
+- Added support for =org-drawer= and =org-special-keyword=. See [[https://github.com/mssola/soria/commit/8539cc132c92519b9053ed48d1bdecac6a64bdd5][8539cc132c92]].
+- Added support for =mode-line= and =doom-modeline=. See [[https://github.com/mssola/soria/commit/ed79c3acfeb457e9d1b6fbb3c97269723e99f633][ed79c3acfeb4]].
 
 ** 0.3.2
 
