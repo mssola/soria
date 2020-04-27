@@ -295,6 +295,12 @@ The theme has to be reloaded after changing anything in this group."
                            :background ,soria-darkgray
                            :weight normal))))
 
+   `(info-quoted
+     ((,class (:inherit info-node))))
+
+   `(Info-quoted
+     ((,class (:inherit info-node))))
+
    ;; outline
    `(outline-1
      ((,class (:inherit org-level-1))))
