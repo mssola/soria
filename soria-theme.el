@@ -178,7 +178,7 @@ The theme has to be reloaded after changing anything in this group."
      ((,class (:foreground ,soria-white))))
 
    `(font-lock-variable-name-face
-     ((,class (:foreground ,soria-white))))
+     ((,class (:foreground ,soria-white :underline nil))))
 
    `(font-lock-preprocessor-face
      ((,class (:foreground ,soria-green))))
