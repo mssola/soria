@@ -430,6 +430,9 @@ The theme has to be reloaded after changing anything in this group."
    `(company-tooltip-common
      ((,class (:foreground ,soria-green))))
 
+   `(company-tooltip-annotation
+     ((,class (:inherit font-lock-type-face))))
+
    `(company-scrollbar-fg
      ((,class (:background ,soria-white))))
 
