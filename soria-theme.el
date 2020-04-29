@@ -1387,6 +1387,53 @@ The theme has to be reloaded after changing anything in this group."
 
    `(org-special-keyword ((,class (:inherit org-done))))
 
+   ;; markup-faces (which also includes adoc-mode)
+
+   `(markup-title-0-face
+     ((,class (:inherit org-level-1))))
+
+   `(markup-title-1-face
+     ((,class (:inherit org-level-1))))
+
+   `(markup-title-2-face
+     ((,class (:inherit org-level-2))))
+
+   `(markup-title-3-face
+     ((,class (:inherit org-level-3))))
+
+   `(markup-title-4-face
+     ((,class (:inherit org-level-4))))
+
+   `(markup-title-5-face
+     ((,class (:inherit org-level-5))))
+
+   `(markup-meta-face
+     ((,class (:inherit org-level-1))))
+
+   `(markup-meta-hide-face
+     ((,class (:inherit org-level-1))))
+
+   `(markup-list-face
+     ((,class (:inherit org-table))))
+
+   `(markup-internal-reference-face
+     ((,class (:inherit link))))
+
+   `(markup-reference-face
+     ((,class (:inherit link))))
+
+   `(markup-typewriter-face
+     ((,class (:inherit org-verbatim))))
+
+   `(markup-verbatim-face
+     ((,class (:inherit org-verbatim))))
+
+   `(markup-comment-face
+     ((,class (:inherit font-lock-comment-face))))
+
+   `(markup-anchor-face
+     ((,class (:inherit org-target))))
+
    ;; modeline: this is the base for faces from some modelines (doom-modeline).
 
    `(mode-line-emphasis
