@@ -9,6 +9,7 @@
 - Fixed Helm selection for GNU Emacs 27.x. See [[https://github.com/mssola/soria/commit/41520c0418a2a5468ac7696159a7dedb558187a7][41520c0418a2]].
 - Added support for =org-drawer= and =org-special-keyword=. See [[https://github.com/mssola/soria/commit/8539cc132c92519b9053ed48d1bdecac6a64bdd5][8539cc132c92]].
 - Added support for =mode-line= and =doom-modeline=. See [[https://github.com/mssola/soria/commit/ed79c3acfeb457e9d1b6fbb3c97269723e99f633][ed79c3acfeb4]].
+- Improved =message= support by adding =message-cited-text-x= levels.
 
 ** 0.3.2
 

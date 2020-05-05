@@ -936,6 +936,18 @@ The theme has to be reloaded after changing anything in this group."
    `(message-cited-text
      ((,class (:foreground ,soria-gray :weight normal))))
 
+   `(message-cited-text-1
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(message-cited-text-2
+     ((,class (:foreground ,soria-gray :weight normal))))
+
+   `(message-cited-text-3
+     ((,class (:foreground ,soria-gray :weight normal))))
+
+   `(message-cited-text-4
+     ((,class (:foreground ,soria-gray :weight normal))))
+
    `(message-header-name
      ((,class (:foreground ,soria-gray :weight normal))))
 
