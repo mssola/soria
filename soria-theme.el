@@ -366,6 +366,9 @@ The theme has to be reloaded after changing anything in this group."
    `(helm-ff-file
      ((,class (:foreground ,soria-white))))
 
+   `(helm-ff-file-extension
+     ((,class (:foreground ,soria-white))))
+
    `(helm-ff-invalid-symlink
      ((,class (:foreground ,soria-white))))
 
