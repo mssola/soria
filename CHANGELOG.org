@@ -2,7 +2,7 @@
 
 * Changelog
 
-** Next
+** 0.3.3
 
 - Do not highlight file extensions differently in =helm=. See [[https://github.com/mssola/soria/commit/7335adaa6e23d8aa10d2ca68e9ce2ac7fee8664c][7335adaa6e2]].
 - Added support for =markup-faces= (which also include =adoc-mode=). See [[https://github.com/mssola/soria/commit/789f0a3474e6ad6c11e07f2c61d5994b2375bdba][789f0a3474e6]].

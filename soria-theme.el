@@ -16,7 +16,7 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;; Author: Miquel Sabaté Solà <mikisabate@gmail.com>
-;; Version: 0.3.2
+;; Version: 0.3.3
 ;; Package-Requires: ((emacs "25.1"))
 ;; Keywords: faces
 ;; URL: https://github.com/mssola/soria
