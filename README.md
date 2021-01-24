@@ -1,4 +1,5 @@
 <p align="center">
+  <a href="https://www.gnu.org/software/emacs/"><img alt="GNU Emacs supported versions" src="https://img.shields.io/badge/GNU%20Emacs-25.1%2B-875f87.svg"/><a/>
   <a href="https://melpa.org/#/soria-theme"><img alt="MELPA" src="https://melpa.org/packages/soria-theme-badge.svg"/></a>
   <a href="https://stable.melpa.org/#/soria-theme"><img alt="MELPA Stable" src="https://stable.melpa.org/packages/soria-theme-badge.svg"/></a>
   <a href="https://travis-ci.org/mssola/soria" title="Travis CI status for the master branch"><img src="https://travis-ci.org/mssola/soria.svg?branch=master" alt="Build Status for master branch" /></a>
