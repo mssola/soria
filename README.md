@@ -16,15 +16,11 @@
   [suxue](https://github.com/suxue/xoria256-emacs).
 - openSUSE: I took some colors from [openSUSE's Brand Guidelines](http://opensuse.github.io/branding-guidelines/).
 
-In the `soria-theme.el` file I list further acknowledgements.
+You can get a glimpse of this color theme on this screenshot (and you can check
+more screenshots on this [project's
+wiki](https://github.com/mssola/soria/wiki)):
 
-## Screenshots
-
-I've saved some screenshots in the [screenshots](./screenshots) directory. They
-do not show a full sample of all the defined colors, but it will give you a good
-idea of the look and feel of this theme. A glimpse:
-
-![Overview screenshot](screenshots/c.png)
+![Overview screenshot](https://raw.githubusercontent.com/wiki/mssola/soria/screenshots/linux.png)
 
 ## Installation
 
@@ -177,3 +173,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
+
+You can check the `soria-theme.el` and the `soria-theme-tree.el` files for
+further acknowledgements.
