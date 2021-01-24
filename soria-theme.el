@@ -1484,7 +1484,44 @@ The theme has to be reloaded after changing anything in this group."
      ((,class (:foreground ,soria-green :weight normal))))
 
    `(doom-modeline-warning
-     ((,class (:foreground ,soria-orange :weight normal))))))
+     ((,class (:foreground ,soria-orange :weight normal))))
+
+   ;; treemacs
+
+   `(treemacs-root-face
+     ((,class (:foreground ,soria-white :weight bold))))
+
+   `(treemacs-file-face
+     ((,class (:foreground ,soria-white))))
+
+   `(treemacs-directory-face
+     ((,class (:foreground ,soria-blue))))
+
+   `(treemacs-tags-face
+     ((,class (:foreground ,soria-yellow))))
+
+   `(treemacs-git-modified-face
+     ((,class (:foreground ,soria-orange))))
+
+   `(treemacs-git-added-face
+     ((,class (:foreground ,soria-green))))
+
+   `(treemacs-git-conflict-face
+     ((,class (:foreground ,soria-redpastel))))
+
+   `(treemacs-git-untracked-face
+     ((,class (:inherit flycheck-warning))))
+
+   ;; all-the-icons
+
+   `(all-the-icons-red
+     ((,class (:foreground ,soria-redpastel))))
+
+   `(all-the-icons-orange
+     ((,class (:foreground ,soria-orange))))
+
+   `(all-the-icons-green
+     ((,class (:foreground ,soria-green))))))
 
 (defun soria-theme-purple-identifiers ()
   "Make function identifiers purple.
@@ -1501,7 +1538,6 @@ identifiers"
 
 (provide-theme 'soria)
 
-;; Make package-lint happy. This file is not meant to be used as a library.
 (provide 'soria-theme)
 
 ;;; soria-theme.el ends here

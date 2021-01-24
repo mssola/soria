@@ -50,6 +50,10 @@ this, with a configuration like:
   :config
   (load-theme 'soria t)
 
+  (with-eval-after-load 'treemacs
+    (require 'soria-theme-tree)
+    (soria-theme-tree-config))
+
   (dolist (lang-hook '(ruby-mode-hook
                        php-mode-hook
                        perl-mode-hook
@@ -99,6 +103,16 @@ Then you can load this theme as usual:
 `M-x load-theme RET soria`
 
 ## Customization
+
+### `treemacs` support
+
+This color theme has support for the `treemacs` package, but in order to enable it you have to call the `soria-theme-tree-config` function. You can do this like so:
+
+```elisp
+(with-eval-after-load 'treemacs
+  (require 'soria-theme-tree)
+  (soria-theme-tree-config))
+```
 
 ### soria-theme-hide-helm-header
 
