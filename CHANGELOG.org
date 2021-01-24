@@ -2,7 +2,7 @@
 
 * Changelog
 
-** 0.4.0 (in development)
+** 0.4.0
 
 - Added support for =treemacs=. See [[https://github.com/mssola/soria/commit/62d1d61994b4889f8fff16978b7dfa1a047f6832][62d1d61994b4]].
 - The =master= branch has been renamed into =main=.
