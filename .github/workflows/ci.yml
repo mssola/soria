@@ -34,7 +34,11 @@ jobs:
 
     - uses: actions/setup-go@v2
 
+    - name: Install git-validation
+      run: |
+        go get -u github.com/vbatts/git-validation
+
     - uses: actions/checkout@v2
 
-    - name: Check startup
+    - name: make ci
       run: make ci
