@@ -1402,6 +1402,23 @@ The theme has to be reloaded after changing anything in this group."
 
    `(org-special-keyword ((,class (:inherit org-done))))
 
+   ;; org-ref
+
+   `(org-ref-cite-face
+     ((,class (:inherit link))))
+
+   `(org-ref-label-face
+     ((,class (:inherit link))))
+
+   `(org-ref-ref-face
+     ((,class (:inherit link))))
+
+   `(org-ref-glossary-face
+     ((,class (:inherit link))))
+
+   `(org-ref-acronym-face
+     ((,class (:inherit link))))
+
    ;; markup-faces (which also includes adoc-mode)
 
    `(markup-title-0-face
