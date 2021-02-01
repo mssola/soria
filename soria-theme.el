@@ -1060,7 +1060,7 @@ The theme has to be reloaded after changing anything in this group."
      ((,class (:inherit font-lock-comment-face :slant italic))))
 
    `(mu4e-ok-face
-     ((,class (:inherit font-lock-comment-face :slant normal :weight normal))))
+     ((,class (:inherit font-lock-preprocessor-face :slant normal :weight normal))))
 
    `(mu4e-replied-face
      ((,class (:inherit font-lock-builtin-face :weight normal))))
