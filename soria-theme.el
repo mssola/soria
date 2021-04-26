@@ -43,9 +43,9 @@
 
 ;; Defining the theme and its configuration group.
 
-(deftheme soria "A xoria256 theme with some colors from openSUSE")
+(deftheme soria "A xoria256 theme with some colors from openSUSE.")
 
-(defgroup soria nil
+(defgroup soria-theme nil
   "Soria theme options.
 The theme has to be reloaded after changing anything in this group."
   :group 'faces)
@@ -53,7 +53,7 @@ The theme has to be reloaded after changing anything in this group."
 (defcustom soria-theme-hide-helm-header t
   "Hide the Helm header."
   :type 'boolean
-  :group 'soria)
+  :group 'soria-theme)
 
 ;; The color theme itself.
 
@@ -1597,7 +1597,5 @@ identifiers"
          `((font-lock-function-name-face :foreground ,soria-purple)))))
 
 (provide-theme 'soria)
-
-(provide 'soria-theme)
 
 ;;; soria-theme.el ends here
