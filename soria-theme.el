@@ -241,6 +241,49 @@ The theme has to be reloaded after changing anything in this group."
    `(compilation-mode-line-exit
      ((,class (:foreground ,soria-brightgreen))))
 
+   ;; Tab line
+
+   `(tab-line
+     ((,class (:foreground ,soria-white :background ,soria-linegray))))
+
+   `(tab-line-tab
+     ((,class (:foreground ,soria-white :background ,soria-linegray))))
+
+   `(tab-line-tab-inactive
+     ((,class (:foreground ,soria-statusncgray :background ,soria-linegray))))
+
+   `(tab-line-tab-current
+     ((,class (:foreground ,soria-white :background ,soria-statusgray))))
+
+   `(tab-line-highlight
+     ((,class (:inherit tab-line-tab))))
+
+   `(tab-line-close-highlight
+     ((,class (:inherit tab-line-tab))))
+
+   `(tab-bar
+     ((,class (:inherit tab-line))))
+
+   `(tab-bar-tab
+     ((,class (:inherit tab-line-tab))))
+
+   `(tab-bar-tab-inactive
+     ((,class (:inherit tab-line-tab-inactive))))
+
+   ;; Line numbers
+
+   `(line-number
+     ((,class (:inherit default
+                        :foreground ,soria-gray :distant-foreground nil
+                        :background ,soria-darkgray
+                        :weight normal :italic nil :underline nil :strike-through nil))))
+
+   `(line-number-current-line
+     ((,class (:inherit default
+                        :foreground ,soria-white :distant-foreground nil
+                        :background ,soria-darkgray
+                        :weight normal :italic nil :underline nil :strike-through nil))))
+
    ;; Custom
 
    `(custom-face-tag
