@@ -2,12 +2,12 @@
 
 * Changelog
 
-** Next
+** 0.4.1
 
 - Added support for =org-ref=. See [[https://github.com/mssola/soria/commit/2a59db06a319500fcb0671f1545433b16309d00a][2a59db06a319]].
 - Fixed the =mu4e-ok-face=. See [[https://github.com/mssola/soria/commit/c2236e4a1c6261137e6fde01947075652027f378][c2236e4a1c62]].
 - Added support for =tab-line= and =line-number=. See [[https://github.com/mssola/soria/commit/ae1229ac9a7f86fe0ec713f70e64b9cfdec592e3][ae1229ac9a7f]].
-- Added support for =gnus=.
+- Added support for =gnus=. See [[https://github.com/mssola/soria/commit/5ce622fa1db112ec972c1e74296917e43f2ad151][5ce622fa1db1]].
 
 ** 0.4.0
 
