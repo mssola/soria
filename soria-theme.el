@@ -1021,6 +1021,167 @@ The theme has to be reloaded after changing anything in this group."
    `(message-separator
      ((,class (:foreground ,soria-gray :slant italic))))
 
+   ;; gnus
+
+   `(gnus-group-mail-1
+     ((,class (:foreground ,soria-white :inherit bold))))
+
+   `(gnus-group-mail-2
+     ((,class (:inherit gnus-group-mail-1))))
+
+   `(gnus-group-mail-3
+     ((,class (:inherit gnus-group-mail-1))))
+
+   `(gnus-group-mail-1-empty
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(gnus-group-mail-2-empty
+     ((,class (:inherit gnus-group-mail-1-empty))))
+
+   `(gnus-group-mail-3-empty
+     ((,class (:inherit gnus-group-mail-1-empty))))
+
+   `(gnus-group-news-1
+     ((,class (:inherit gnus-group-mail-1))))
+
+   `(gnus-group-news-2
+     ((,class (:inherit gnus-group-news-1))))
+
+   `(gnus-group-news-3
+     ((,class (:inherit gnus-group-news-1))))
+
+   `(gnus-group-news-4
+     ((,class (:inherit gnus-group-news-1))))
+
+   `(gnus-group-news-5
+     ((,class (:inherit gnus-group-news-1))))
+
+   `(gnus-group-news-6
+     ((,class (:inherit gnus-group-news-1))))
+
+   `(gnus-group-news-1-empty
+     ((,class (:inherit gnus-group-mail-1-empty))))
+
+   `(gnus-group-news-2-empty
+     ((,class (:inherit gnus-group-news-1-empty))))
+
+   `(gnus-group-news-3-empty
+     ((,class (:inherit gnus-group-news-1-empty))))
+
+   `(gnus-group-news-4-empty
+     ((,class (:inherit gnus-group-news-1-empty))))
+
+   `(gnus-group-news-5-empty
+     ((,class (:inherit gnus-group-news-1-empty))))
+
+   `(gnus-group-news-6-empty
+     ((,class (:inherit gnus-group-news-1-empty))))
+
+   `(gnus-group-mail-low
+     ((,class (:inherit gnus-group-mail-1 :weight normal))))
+
+   `(gnus-group-mail-low-empty
+     ((,class (:inherit gnus-group-mail-1-empty))))
+
+   `(gnus-group-news-low-empty
+     ((,class (:inherit gnus-group-news-1-empty))))
+
+   `(gnus-header-name
+     ((,class (:inherit message-header-name :weight normal))))
+
+   `(gnus-header-content
+     ((,class (:foreground ,soria-blue :weight normal :slant normal))))
+
+   `(gnus-header-from
+     ((,class (:inherit gnus-header-content))))
+
+   `(gnus-header-newsgroups
+     ((,class (:inherit message-header-other))))
+
+   `(gnus-header-subject
+     ((,class (:inherit message-header-subject))))
+
+   `(gnus-cite-1
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-2
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-3
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-4
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-5
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-6
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-7
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-8
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-9
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-10
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-cite-11
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-signature
+     ((,class (:foreground ,soria-green :weight normal))))
+
+   `(gnus-x-face
+     ((,class (:foreground ,soria-gray :weight normal))))
+
+   `(gnus-summary-selected
+     ((,class (:background ,soria-linegray,:underline nil :extend t))))
+
+   `(gnus-summary-cancelled
+     ((,class (:foreground ,soria-redpastel :weight normal))))
+
+   `(gnus-summary-high-ancient
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-high-read
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-high-ticked
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-high-unread
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-low-ancient
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-low-read
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-low-ticked
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-low-unread
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-normal-ancient
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-normal-read
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-normal-ticked
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
+   `(gnus-summary-normal-unread
+     ((,class (:foreground ,soria-gray :slant italic :weight normal))))
+
    ;; Evil mode
 
    `(evil-ex-info
