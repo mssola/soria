@@ -1670,6 +1670,35 @@ The theme has to be reloaded after changing anything in this group."
    `(markup-anchor-face
      ((,class (:inherit org-target))))
 
+   ;; shr
+
+   `(shr-link
+     ((,class (:inherit link))))
+
+   `(shr-selected-link
+     ((,class (:inherit link-visited))))
+
+   `(shr-abbreviation
+     ((,class (:foreground ,soria-white :slant italic))))
+
+   `(shr-h1
+     ((,class (:inherit org-level-1))))
+
+   `(shr-h2
+     ((,class (:inherit org-level-2))))
+
+   `(shr-h3
+     ((,class (:inherit org-level-3))))
+
+   `(shr-h4
+     ((,class (:inherit org-level-4))))
+
+   `(shr-h5
+     ((,class (:inherit org-level-5))))
+
+   `(shr-h6
+     ((,class (:inherit org-level-6))))
+
    ;; modeline: this is the base for faces from some modelines (doom-modeline).
 
    `(mode-line-emphasis

@@ -2,6 +2,10 @@
 
 * Changelog
 
+** Next
+
+- Added support for =shr=.
+
 ** 0.4.1
 
 - Added support for =org-ref=. See [[https://github.com/mssola/soria/commit/2a59db06a319500fcb0671f1545433b16309d00a][2a59db06a319]].
