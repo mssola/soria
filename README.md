@@ -24,7 +24,7 @@ wiki](https://github.com/mssola/soria/wiki)):
 
 ## Installation
 
-### package.el (recommended)
+### MELPA (recommended)
 
 This theme is available from [MELPA](https://melpa.org/#/soria-theme) and [MELPA
 stable](https://stable.melpa.org/#/soria-theme). Thus, you can install this
@@ -80,8 +80,8 @@ project](https://build.opensuse.org/package/show/home:mssola/soria-theme). You
 can add the repository for your openSUSE distribution and install it like so:
 
 ```
-# This is the openSUSE Leap 15.1 repository. Check my home project for more openSUSE distributions.
-$ sudo zypper ar https://download.opensuse.org/repositories/home:/mssola/openSUSE_Leap_15.1/ home:mssola
+# This is the openSUSE Leap 15.3 repository. Check my home project for more openSUSE distributions.
+$ sudo zypper ar https://download.opensuse.org/repositories/home:/mssola/openSUSE_Leap_15.3/ home:mssola
 $ sudo zypper ref home:mssola
 $ sudo zypper install soria-theme
 ```
