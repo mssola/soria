@@ -926,6 +926,82 @@ The theme has to be reloaded after changing anything in this group."
    `(git-timemachine-minibuffer-author-face
      ((,class (:foreground ,soria-blue :weight normal))))
 
+   ;; diredfl
+   `(diredfl-autofile-name
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(diredfl-compressed-file-name
+     ((,class (:foreground ,soria-orange :weight normal))))
+
+   `(diredfl-compressed-file-suffix
+     ((,class (:foreground ,soria-orange :weight normal))))
+
+   `(diredfl-date-time
+     ((,class (:foreground ,soria-gray))))
+
+   `(diredfl-deletion
+     ((,class (:foreground ,soria-redpastel :weight normal))))
+
+   `(diredfl-deletion-file-name
+     ((,class (:foreground ,soria-redpastel :weight normal))))
+
+   `(diredfl-dir-heading
+     ((,class (:background ,soria-darkgray))))
+
+   `(diredfl-dir-name
+     ((,class (:foreground ,soria-blue :weight normal))))
+
+   `(diredfl-dir-priv
+     ((,class (:foreground ,soria-blue :weight normal))))
+
+   `(diredfl-exec-priv
+     ((,class (:foreground ,soria-yellow :weight normal))))
+
+   `(diredfl-executable-tag
+     ((,class (:foreground ,soria-yellow :weight normal))))
+
+   `(diredfl-file-name
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(diredfl-file-suffix
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(diredfl-flag-mark
+     ((,class (:foreground ,soria-green :weight normal))))
+
+   `(diredfl-flag-mark-line
+     ((,class (:foreground ,soria-green :weight normal))))
+
+   `(diredfl-ignored-file-name
+     ((,class (:foreground ,soria-gray :weight normal))))
+
+   `(diredfl-link-priv
+     ((,class (:foreground ,soria-purple :weight normal))))
+
+   `(diredfl-no-priv
+     ((,class (:background ,soria-darkgray))))
+
+   `(diredfl-number
+     ((,class (:foreground ,soria-orange :weight normal))))
+
+   `(diredfl-other-priv
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(diredfl-rare-priv
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(diredfl-read-priv
+     ((,class (:foreground ,soria-green :weight normal))))
+
+   `(diredfl-symlink
+     ((,class (:foreground ,soria-purple :weight normal))))
+
+   `(diredfl-tagged-autofile-name
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(diredfl-write-priv
+     ((,class (:foreground ,soria-redpastel :weight normal))))
+
    ;; diff
 
    `(diff-added
