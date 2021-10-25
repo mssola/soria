@@ -471,7 +471,7 @@ The theme has to be reloaded after changing anything in this group."
      ((,class (:background ,soria-darkgray))))
 
    `(company-tooltip-selection
-     ((,class (:inherit helm-selection))))
+     ((,class (:background ,soria-linegray))))
 
    `(company-tooltip-common
      ((,class (:foreground ,soria-green))))
