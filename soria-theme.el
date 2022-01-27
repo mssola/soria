@@ -577,6 +577,19 @@ The theme has to be reloaded after changing anything in this group."
    `(makefile-space
      ((,class (:background ,soria-darkpurple))))
 
+   ;; Dockerfile
+
+   `(dockerfile-image-name
+     ((,class (:foreground ,soria-white :weight normal))))
+
+   `(dockerfile-image-alias
+     ((,class (:foreground ,soria-yellow :weight normal))))
+
+   ;; js2
+
+   `(js2-function-param
+     ((,class (:foreground ,soria-white))))
+
    ;; eshell
 
    `(eshell-prompt

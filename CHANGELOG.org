@@ -6,7 +6,8 @@
 
 - Added support for =shr=. See [[https://github.com/mssola/soria/commit/cc225f51ea724d8767f97249d8c6b3fc5182d331][cc225f51ea72]].
 - Added support for =diredfl=. See [[https://github.com/mssola/soria/commit/b9a35f891b24380ce57d1468463ffe71e2738204][b9a35f891b24]].
-- Fixed background color for =company-mode=.
+- Fixed background color for =company-mode= See [[https://github.com/mssola/soria/commit/a111e7169405778d95f7a1e61a7d197ca1217edf][a111e7169405]].
+- Added support for =dockerfile-mode=.
 
 ** 0.4.1
 
