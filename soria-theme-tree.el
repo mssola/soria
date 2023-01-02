@@ -1,6 +1,6 @@
 ;;; soria-theme-tree.el --- Files tree integration of the soria theme -*- lexical-binding: t; no-byte-compile: t -*-
 
-;; Copyright (C) 2021 Miquel Sabaté Solà <mikisabate@gmail.com>
+;; Copyright (C) 2021-2023 Miquel Sabaté Solà <mikisabate@gmail.com>
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

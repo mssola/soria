@@ -1,6 +1,6 @@
 ;;; soria-theme.el --- A xoria256 theme with some colors from openSUSE -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2016-2021 Miquel Sabaté Solà <mikisabate@gmail.com>
+;; Copyright (C) 2016-2023 Miquel Sabaté Solà <mikisabate@gmail.com>
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
