@@ -64,6 +64,7 @@ fix-stdlib-changes:
 # package-lint shut up.
 	@mkdir -p vendor/data
 	@echo "()" > vendor/data/stdlib-changes
+	@echo "()" > vendor/data/compat-symbols
 
 .PHONY: lint
 lint: vendor fix-stdlib-changes
