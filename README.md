@@ -129,12 +129,12 @@ This theme also provides one interactive function that can be used as a hook:
 As a reminder, this color theme is a port from Vim, and Vim and GNU Emacs have
 some different takes on function identifiers. As such, the original Vim theme
 defines identifiers as purple, but only method definitions in Ruby, Perl and PHP
-(languages that I've used with these theme, there might be more) were
-highlighted this way, but that wasn't the case for C, C++ or Go. This is
-certainly a bug in Vim, but I got used to it, and when doing this port I could
-notice this a lot. For this reason, by default this color theme for GNU Emacs
-defines function identifiers as white, but it provides this function so in other
-languages can be drawn in purple.
+(languages that I've used with this theme, there might be more) were highlighted
+this way, but that wasn't the case for C, C++ or Go. This is certainly a bug in
+Vim, but I got used to it, and when doing this port I could notice this a lot.
+For this reason, by default this color theme for GNU Emacs defines function
+identifiers as white, but it provides this function so in other languages can be
+drawn in purple.
 
 You may turn identifiers into purple with a code like this:
 
@@ -158,7 +158,7 @@ Read the [CHANGELOG.org](./CHANGELOG.org) file.
 ## License
 
 ```
-Copyright (C) 2016-2023 Miquel Sabaté Solà <mikisabate@gmail.com>
+Copyright (C) 2016-Ω Miquel Sabaté Solà <mikisabate@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
