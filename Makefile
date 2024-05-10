@@ -36,7 +36,7 @@ $(OBJECTS): %.elc: %.el
 ci: version all
 
 .PHONY: test
-test: lint git-validation checkdoc load-test
+test: lint checkdoc load-test
 
 # Maybe it would've been nicer to use Cask or something like that, but it
 # doesn't have too many dependencies so it should be fine for now.
@@ -69,14 +69,6 @@ fix-stdlib-changes:
 .PHONY: lint
 lint: vendor fix-stdlib-changes
 	@$(BATCH) -l elisp-lint.el -f elisp-lint-files-batch $(ELS)
-
-.PHONY: git-validation
-git-validation:
-ifeq (, $(shell which git-validation 2> /dev/null))
-	@echo "You don't have 'git-validation' installed, consider installing it (see the CONTRIBUTING.org file)."
-else
-	@git-validation -q -range 7d38ca68163c..HEAD -travis-pr-only=false
-endif
 
 .PHONY: load-test
 load-test:

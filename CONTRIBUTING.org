@@ -31,25 +31,6 @@ style. You can run these checkers by performing:
 $ make lint
 #+END_SRC
 
-*** Git validation
-
-In order to ensure that the git log is as maintainable as possible, the
-[[https://github.com/vbatts/git-validation][git-validation]] tool is used. You can install this tool by running:
-
-#+BEGIN_SRC bash
-$ go get -u github.com/vbatts/git-validation
-#+END_SRC
-
-If you already have this tool installed, then simply perform:
-
-#+BEGIN_SRC bash
-$ make git-validation
-#+END_SRC
-
-Note that if you don't have this tool installed the task will do nothing (it
-will just print a help message). This is done so when running the default make
-task this doesn't interrupt it.
-
 *** Load test
 
 In order to test that this theme can be actually loaded, run:
