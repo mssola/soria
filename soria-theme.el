@@ -1860,7 +1860,91 @@ The theme has to be reloaded after changing anything in this group."
      ((,class (:foreground ,soria-orange))))
 
    `(all-the-icons-green
-     ((,class (:foreground ,soria-green))))))
+     ((,class (:foreground ,soria-green))))
+
+   ;; nerd-icons
+
+   ;;; red
+   `(nerd-icons-red
+     ((,class (:foreground ,soria-redpastel))))
+   `(nerd-icons-lred
+     ((,class (:foreground ,soria-redpastel))))
+   `(nerd-icons-dred
+     ((,class (:foreground ,soria-redpastel))))
+   `(nerd-icons-red-alt
+     ((,class (:foreground ,soria-redpastel))))
+
+   ;;; green
+   `(nerd-icons-green
+     ((,class (:foreground ,soria-green))))
+   `(nerd-icons-lgreen
+     ((,class (:foreground ,soria-green))))
+   `(nerd-icons-dgreen
+     ((,class (:foreground ,soria-green))))
+
+   ;; yellow
+   `(nerd-icons-yellow
+     ((,class (:foreground ,soria-yellow))))
+   `(nerd-icons-lyellow
+     ((,class (:foreground ,soria-yellow))))
+   `(nerd-icons-dyellow
+     ((,class (:foreground ,soria-yellow))))
+
+   ;; blue & cyan
+   `(nerd-icons-blue
+     ((,class (:foreground ,soria-blue))))
+   `(nerd-icons-blue-alt
+     ((,class (:foreground ,soria-blue))))
+   `(nerd-icons-lblue
+     ((,class (:foreground ,soria-blue))))
+   `(nerd-icons-dblue
+     ((,class (:foreground ,soria-blue))))
+   `(nerd-icons-cyan
+     ((,class (:foreground ,soria-blue))))
+   `(nerd-icons-cyan-alt
+     ((,class (:foreground ,soria-blue))))
+   `(nerd-icons-lcyan
+     ((,class (:foreground ,soria-blue))))
+   `(nerd-icons-dcyan
+     ((,class (:foreground ,soria-blue))))
+
+   ;; maroon & orange
+   `(nerd-icons-maroon
+     ((,class (:foreground ,soria-orange))))
+   `(nerd-icons-lmaroon
+     ((,class (:foreground ,soria-orange))))
+   `(nerd-icons-dmaroon
+     ((,class (:foreground ,soria-orange))))
+   `(nerd-icons-orange
+     ((,class (:foreground ,soria-orange))))
+   `(nerd-icons-lorange
+     ((,class (:foreground ,soria-orange))))
+   `(nerd-icons-dorange
+     ((,class (:foreground ,soria-orange))))
+
+   ;; purple & pink
+   `(nerd-icons-purple
+     ((,class (:foreground ,soria-purple))))
+   `(nerd-icons-purple-alt
+     ((,class (:foreground ,soria-purple))))
+   `(nerd-icons-lpurple
+     ((,class (:foreground ,soria-purple))))
+   `(nerd-icons-dpurple
+     ((,class (:foreground ,soria-purple))))
+   `(nerd-icons-pink
+     ((,class (:foreground ,soria-purple))))
+   `(nerd-icons-lpink
+     ((,class (:foreground ,soria-purple))))
+   `(nerd-icons-dpink
+     ((,class (:foreground ,soria-purple))))
+
+   ;; silver
+   `(nerd-icons-silver
+     ((,class (:foreground ,soria-white))))
+   `(nerd-icons-lsilver
+     ((,class (:foreground ,soria-white))))
+   `(nerd-icons-dsilver
+     ((,class (:foreground ,soria-white))))))
 
 (defun soria-theme-purple-identifiers ()
   "Make function identifiers purple.

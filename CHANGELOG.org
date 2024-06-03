@@ -1,6 +1,9 @@
 #+STARTUP:showall
 
 * Changelog
+** To be released
+
+- Added support for =nerd-icons=.
 
 ** 0.4.2
 
